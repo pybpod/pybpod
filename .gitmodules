@@ -1,0 +1,18 @@
+[submodule "pybpod-api"]
+	path = pybpod-api
+	url = https://bitbucket.org/fchampalimaud/pybpod-api.git
+[submodule "pybpod-gui-api"]
+	path = pybpod-gui-api
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-api.git
+[submodule "pybpod-gui-plugin"]
+	path = pybpod-gui-plugin
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin.git
+[submodule "pybpod-gui-plugin-session-history"]
+	path = pybpod-gui-plugin-session-history
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-session-history.git
+[submodule "pybpod-gui-plugin-timeline"]
+	path = pybpod-gui-plugin-timeline
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-timeline.git
+[submodule "pybpod-rotary-encoder-module"]
+	path = pybpod-rotary-encoder-module
+	url = https://bitbucket.org/fchampalimaud/pybpod-rotary-encoder-module.git
