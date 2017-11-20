@@ -28,3 +28,6 @@
 [submodule "logging-bootstrap"]
 	path = logging-bootstrap
 	url = https://UmSenhorQualquer@bitbucket.org/fchampalimaud/logging-bootstrap.git
+[submodule "pybranch"]
+	path = pybranch
+	url = https://UmSenhorQualquer@bitbucket.org/fchampalimaud/pybranch.git
