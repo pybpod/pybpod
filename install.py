@@ -11,10 +11,11 @@ SUBMODULES_FOLDERS = [
     'pyforms-generic-editor',
     'pybpod-api',
     'pybpod-gui-api',
+    'pybranch',
     'pybpod-gui-plugin',
     'pybpod-gui-plugin-session-history',
     'pybpod-gui-plugin-timeline',
-    'pybpod-rotary-encoder-module'
+    'pybpod-rotary-encoder-module',
 ]
 
 DEFAULT_PLUGINS = [
