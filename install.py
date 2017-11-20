@@ -1,18 +1,32 @@
-import pip, os
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
+import pip, os
+from subprocess import call
+
+SUBMODULES_FOLDERS = [
+    'logging-bootstrap',
+    'pysettings',
+    'pyforms',
+    'pyforms-generic-editor',
+    'pybpod-api',
+    'pybpod-gui-api',
+    'pybpod-gui-plugin',
+    'pybpod-gui-plugin-session-history',
+    'pybpod-gui-plugin-timeline',
+    'pybpod-rotary-encoder-module'
+]
 
 def install():
-	pip.main(['install', '--upgrade', os.path.join('logging-bootstrap','.')])
-	pip.main(['install', '--upgrade', os.path.join('pysettings','.')])
-	pip.main(['install', '--upgrade', os.path.join('pyforms','.')])
-	pip.main(['install', '--upgrade', os.path.join('pyforms-generic-editor','.')])
-	pip.main(['install', '--upgrade', os.path.join('pybpod-api','.')])
-	pip.main(['install', '--upgrade', os.path.join('pybpod-gui-api','.')])
-	pip.main(['install', '--upgrade', os.path.join('pybpod-gui-plugin','.')])
-	pip.main(['install', '--upgrade', os.path.join('pybpod-gui-plugin-session-history','.')])
-	pip.main(['install', '--upgrade', os.path.join('pybpod-gui-plugin-timeline','.')])
-	pip.main(['install', '--upgrade', os.path.join('pybpod-rotary-encoder-module','.')])
+    for submodule in SUBMODULES_FOLDERS:
+        pip.main(['install', '--upgrade', os.path.join(submodule,'.')])
+
+def check_submodules():
+    for submodule in SUBMODULES_FOLDERS:
+        if not os.path.exists(os.path.join(submodule,'setup.py')):
+            call(["git", "pull", "--recurse-submodules"])
+            break
 
 
 if __name__=='__main__': 
-	install()
+    install()
