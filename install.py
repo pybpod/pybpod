@@ -26,8 +26,6 @@ DEFAULT_PLUGINS = [
 ]
 
 
-
-
 def install():
     for submodule in SUBMODULES_FOLDERS:
         pip.main(['install', '--upgrade', os.path.join(submodule,'.')])
@@ -35,7 +33,7 @@ def install():
 def check_submodules():
     for submodule in SUBMODULES_FOLDERS:
         if not os.path.exists(os.path.join(submodule,'setup.py')):
-            call(["git", "pull", "--recurse-submodules"])
+            call(["git", "submodule", "update", "--init", "--recursive"])
             break
 
 def conf_default_settings():
@@ -47,5 +45,6 @@ def conf_default_settings():
 
 
 if __name__=='__main__': 
+    check_submodules()
     install()
     conf_default_settings()
