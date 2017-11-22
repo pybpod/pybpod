@@ -22,7 +22,7 @@ DEFAULT_PLUGINS = [
     'pybpodgui_plugin',
     'pybpodgui_plugin_timeline',
     'pybpodgui_plugin_session_history',
-    'pybpod-rotary-encoder-module'
+    'pybpod_rotaryencoder_module'
 ]
 
 
