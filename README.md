@@ -6,7 +6,7 @@ This project is maintained by a team of SW developers at the Champalimaud Founda
 
 ### Install PyBpod project ###
 
-1. Download & install [Anaconda](https://www.anaconda.com/download/) or [Miniconda](https://conda.io/miniconda.html) project.
+1. Download & install [Anaconda](https://www.anaconda.com/download/) or [Miniconda](https://conda.io/miniconda.html) .
 2. Download the environment configuration file for your Operating System ( [Windows 10](https://bitbucket.org/fchampalimaud/pybpod/raw/e6c1c8da96c240ae638309359a97b28a2d36ca55/environment-windows-10.yml) ) and create a virtual environment with it by executing the following commands in the "Anaconda Prompt".
 ```
 conda env create -f environment-windows-10.yml
@@ -22,11 +22,11 @@ activate pybpod-environment
 ```
 git clone https://UmSenhorQualquer@bitbucket.org/fchampalimaud/pybpod.git
 ```
-5. Access the repository folder that you just created.
+5. Access the created repository folder.
 ```
 cd pybpod
 ```
-6. Run the install script to install all necessary dependencies.
+6. Run the "install.py" script to install all necessary dependencies.
 ```
 python install.py
 ```
