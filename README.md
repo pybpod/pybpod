@@ -2,7 +2,7 @@
 
 PyBpod is a GUI application that enables interaction with the Bpod device from [Sanworks](https://sanworks.io/).
 
-This project is maintained by a team of SW developers at the Champalimaud Foundation. 
+This project is maintained by a team of SW developers at the Champalimaud Foundation.
 
 ### Install PyBpod project ###
 
@@ -11,9 +11,10 @@ This project is maintained by a team of SW developers at the Champalimaud Founda
 ```
 conda env create -f environment-windows-10.yml
 ```
-**Notes:**  
-On windows if you install Anaconda/Miniconda for all the users, you should make sure you run the "Anaconda Prompt" as administrator.  
+**Notes:**
+On windows if you install Anaconda/Miniconda for all the users, you should make sure you run the "Anaconda Prompt" as administrator.
 To avoid issues, make sure you install Anaconda/Miniconda only for your user.
+
 3. Activate the environment you just created.
 ```
 activate pybpod-environment
