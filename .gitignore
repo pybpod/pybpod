@@ -4,3 +4,7 @@ __pycache__/
 user_settings\.py
 
 app\.log
+
+test-project/
+
+docs/build/
