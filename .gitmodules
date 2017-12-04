@@ -31,3 +31,6 @@
 [submodule "pybranch"]
 	path = pybranch
 	url = https://UmSenhorQualquer@bitbucket.org/fchampalimaud/pybranch.git
+[submodule "safe-collaborative-architecture"]
+	path = safe-collaborative-architecture
+	url = https://UmSenhorQualquer@bitbucket.org/fchampalimaud/safe-collaborative-architecture.git
