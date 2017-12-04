@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GUI explained &mdash; pybpod 1.2.0.beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="pybpod 1.2.0.beta documentation" href="../index.html"/>
+        <link rel="next" title="GUI Windows" href="gui_windows.html"/>
+        <link rel="prev" title="Plugins" href="../getting-started/plugins.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pybpod
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.2.0.beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/install.html#run">Run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/install.html#update">Update</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/basic-usage.html">Basic usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/writing-protocols.html">Writing a protocol for Bpod</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/plugins.html">Plugins</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developers</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GUI explained</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#libraries-that-make-up-the-gui">Libraries that make up the GUI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#qt-and-pyqt">Qt and PyQt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyforms">PyForms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyformsgenericeditor">PyformsGenericEditor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybpod-api">PyBpod API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pysettings">Pysettings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pybranch">Pybranch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logging-bootstrap">Logging-bootstrap</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gui_windows.html">GUI Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bpod_interaction.html">Bpod interaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developing_plugins.html">Developing plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/about.html">Project Info</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contents.html">Indices and tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pybpod</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>GUI explained</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/developers/gui_explained.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gui-explained">
+<span id="gui-explained-label"></span><h1>GUI explained<a class="headerlink" href="#gui-explained" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>Quick rationale</strong></p>
+<p class="last">There are a lot of things going on under the hood when you run the <strong>PyBpod GUI</strong>.
+We will try to resume the basic concepts here but keep in mind that it is a lot of information so don’t get frustrated if you don’t get it the first time.
+There were a lot of man-hours involved in this project and we strongly believe that dividing code in modules and libraries, though seems more complicated at first sight, greatly improves code reusability and low-coupling.</p>
+</div>
+<div class="section" id="libraries-that-make-up-the-gui">
+<h2>Libraries that make up the GUI<a class="headerlink" href="#libraries-that-make-up-the-gui" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="qt-and-pyqt">
+<h3>Qt and PyQt<a class="headerlink" href="#qt-and-pyqt" title="Permalink to this headline">¶</a></h3>
+<p>First, <strong>PyBpod GUI</strong> relies on <a class="reference external" href="https://riverbankcomputing.com/software/pyqt/intro">PyQt</a>, a set of Python v2 and v3 bindings for <a class="reference external" href="https://www.qt.io">The Qt Company’s</a> Qt application framework which runs on all platforms supported by Qt including Windows, OS X, Linux, iOS and Android.
+Qt is more than a GUI toolkit. It includes abstractions of network sockets, threads, Unicode, regular expressions, SQL databases, SVG, OpenGL, XML, a fully functional web browser, a help system, a multimedia framework, as well as a rich collection of GUI widgets.</p>
+<p><a class="reference external" href="https://riverbankcomputing.com/software/pyqt/intro">https://riverbankcomputing.com/software/pyqt/intro</a></p>
+</div>
+<div class="section" id="pyforms">
+<h3>PyForms<a class="headerlink" href="#pyforms" title="Permalink to this headline">¶</a></h3>
+<p>Because developing complex applications with PyQt can be hard to maintain, we rely on <strong>Pyforms</strong>, a Python 2.7.x and 3.x cross-enviroment framework for developing GUI applications, which promotes modular software design and code reusability with minimal effort.</p>
+<p><a class="reference external" href="https://github.com/UmSenhorQualquer/pyforms">https://github.com/UmSenhorQualquer/pyforms</a></p>
+</div>
+<div class="section" id="pyformsgenericeditor">
+<h3>PyformsGenericEditor<a class="headerlink" href="#pyformsgenericeditor" title="Permalink to this headline">¶</a></h3>
+<p>But we got even far, and since several GUI applications share the same concepts, we have developed <strong>PyformsGenericEditor</strong>, which allows for quickly bootstrapping a GUI application with file menus, project trees, form fields, etc.
+It also abstracts the concepts of creating, saving and deleting projects. This generic editor can then be adapted for specific use cases by providing plugins which define how projects are saved on filesystem, how to populate the project tree, which options show up in the menus and so on.</p>
+<p>Thus <strong>PyBpod GUI</strong> is itself a plugin for the <strong>PyformsGenericEditor</strong>.</p>
+<a class="reference internal image-reference" href="../_images/pge_overview_annotated.png"><img alt="../_images/pge_overview_annotated.png" src="../_images/pge_overview_annotated.png" style="width: 1376.0px; height: 973.0px;" /></a>
+</div>
+<div class="section" id="pybpod-api">
+<h3>PyBpod API<a class="headerlink" href="#pybpod-api" title="Permalink to this headline">¶</a></h3>
+<p><strong>Pybpod API</strong> is a Python library that enables communication with the latest Bpod device version. It is responsible for translating the protocols you write into a state matrix array and send it to the Bpod device.</p>
+<p><a class="reference external" href="http://pybpod-api.readthedocs.io/en/latest/">http://pybpod-api.readthedocs.io/en/latest/</a></p>
+</div>
+<div class="section" id="pysettings">
+<h3>Pysettings<a class="headerlink" href="#pysettings" title="Permalink to this headline">¶</a></h3>
+<p>Python library to provide settings files for modular applications.</p>
+<p><a class="reference external" href="https://github.com/UmSenhorQualquer/pysettings">https://github.com/UmSenhorQualquer/pysettings</a></p>
+</div>
+<div class="section" id="pybranch">
+<h3>Pybranch<a class="headerlink" href="#pybranch" title="Permalink to this headline">¶</a></h3>
+<p>Library that offers multiprocessing communication.</p>
+<p><a class="reference external" href="https://bitbucket.org/fchampalimaud/pybranch">https://bitbucket.org/fchampalimaud/pybranch</a></p>
+</div>
+<div class="section" id="logging-bootstrap">
+<h3>Logging-bootstrap<a class="headerlink" href="#logging-bootstrap" title="Permalink to this headline">¶</a></h3>
+<p>Library that provides simple methods for bootstrapping a logger with default settings.</p>
+<p><a class="reference external" href="https://bitbucket.org/fchampalimaud/logging-bootstrap">https://bitbucket.org/fchampalimaud/logging-bootstrap</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gui_windows.html" class="btn btn-neutral float-right" title="GUI Windows" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../getting-started/plugins.html" class="btn btn-neutral" title="Plugins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Scientific Sofware Platform (CF).
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.2.0.beta',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

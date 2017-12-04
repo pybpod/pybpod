@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Plugins &mdash; pybpod 1.2.0.beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="pybpod 1.2.0.beta documentation" href="../index.html"/>
+        <link rel="next" title="GUI explained" href="../developers/gui_explained.html"/>
+        <link rel="prev" title="Writing a protocol for Bpod" href="writing-protocols.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pybpod
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.2.0.beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html#run">Run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html#update">Update</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic-usage.html">Basic usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writing-protocols.html">Writing a protocol for Bpod</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Plugins</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-install-plugins">How to install plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples-of-available-plugins">Examples of available plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#session-history">Session history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#session-timeline">Session timeline</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/gui_explained.html">GUI explained</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/gui_windows.html">GUI Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/bpod_interaction.html">Bpod interaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developing_plugins.html">Developing plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/about.html">Project Info</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contents.html">Indices and tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pybpod</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Plugins</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/getting-started/plugins.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="plugins">
+<span id="plugins-label"></span><h1>Plugins<a class="headerlink" href="#plugins" title="Permalink to this headline">¶</a></h1>
+<p>PyBpod GUI can be enhanced with plugins. This way you can easily adapt the GUI for your needs.</p>
+<p>You can use plugins for:</p>
+<blockquote>
+<div><ul class="simple">
+<li>extending or overwriting basic PyBpod functionalities</li>
+<li>creating new visualization tools for PyBpod sessions (e.g., plots, message filters)</li>
+<li>adding new windows, tools or any other GUI-related functionality</li>
+</ul>
+</div></blockquote>
+<p>For detailed information on how to develop plugins please see <a class="reference internal" href="../developers/developing_plugins.html#developing-plugins-label"><span class="std std-ref">Developing PyBpod GUI plugins</span></a>.</p>
+<div class="section" id="how-to-install-plugins">
+<h2>How to install plugins<a class="headerlink" href="#how-to-install-plugins" title="Permalink to this headline">¶</a></h2>
+<p>Installing plugins only takes 3 steps.</p>
+<p>First, you will need to edit your user settings. On the top menu, go to <strong>Options &gt; Edit user settings</strong>.
+Then, locate the following labels:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="xref py py-class docutils literal"><span class="pre">GENERIC_EDITOR_PLUGINS_PATH</span></code> -&gt; this variable expects a string value which should correspond to a filesystem folder path where your plugins are located</li>
+<li><code class="xref py py-class docutils literal"><span class="pre">﻿GENERIC_EDITOR_PLUGINS_LIST</span></code> -&gt; this variable expects a list of strings which are the names of the plugins to be loaded when the GUI starts up</li>
+</ul>
+</div></blockquote>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If you are using Windows OS, you must use double slash for paths. Example: GENERIC_EDITOR_PLUGINS_PATH =  ‘C:\\Users\\YOUR_NAME\\bpod_plugins’.</p>
+</div>
+<a class="reference internal image-reference" href="../_images/user_settings_plugins.png"><img alt="../_images/user_settings_plugins.png" src="../_images/user_settings_plugins.png" style="width: 862.0px; height: 687.0px;" /></a>
+<p>Second, download the plugin folder you want and place it on the “plugins” folder you have just indicated before.</p>
+<p>Finally, restart the GUI. Depending on the kind of plugin, you will see a new option on the top menu or by right-clicking a node in the project tree.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you are developing plugins and you already installed them with PIP, you may leave the <code class="xref py py-class docutils literal"><span class="pre">GENERIC_EDITOR_PLUGINS_PATH</span> <span class="pre">=</span> <span class="pre">None</span></code> because they will be already on the Python path.</p>
+</div>
+</div>
+<div class="section" id="examples-of-available-plugins">
+<h2>Examples of available plugins<a class="headerlink" href="#examples-of-available-plugins" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="session-history">
+<h3>Session history<a class="headerlink" href="#session-history" title="Permalink to this headline">¶</a></h3>
+<p>This plugin allows you to display session data in a table view and you can order events by column.</p>
+<p><a class="reference external" href="https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-session-history">https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-session-history</a></p>
+<a class="reference internal image-reference" href="_images/basic-usage/session_history.png"><img alt="_images/basic-usage/session_history.png" src="_images/basic-usage/session_history.png" /></a>
+</div>
+<div class="section" id="session-timeline">
+<h3>Session timeline<a class="headerlink" href="#session-timeline" title="Permalink to this headline">¶</a></h3>
+<p>This plugin displays trial states in a bar plot.</p>
+<p><a class="reference external" href="https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-timeline">https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-timeline</a></p>
+<a class="reference internal image-reference" href="_images/basic-usage/session_timeline.png"><img alt="_images/basic-usage/session_timeline.png" src="_images/basic-usage/session_timeline.png" /></a>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../developers/gui_explained.html" class="btn btn-neutral float-right" title="GUI explained" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="writing-protocols.html" class="btn btn-neutral" title="Writing a protocol for Bpod" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Scientific Sofware Platform (CF).
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.2.0.beta',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

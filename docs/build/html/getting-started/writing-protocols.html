@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Writing a protocol for Bpod &mdash; pybpod 1.2.0.beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="pybpod 1.2.0.beta documentation" href="../index.html"/>
+        <link rel="next" title="Plugins" href="plugins.html"/>
+        <link rel="prev" title="Basic usage" href="basic-usage.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> pybpod
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.2.0.beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html#run">Run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html#update">Update</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic-usage.html">Basic usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Writing a protocol for Bpod</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-a-bpod-protocol">What is a Bpod protocol?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#protocol-example-explained">Protocol example explained</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developers/gui_explained.html">GUI explained</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/gui_windows.html">GUI Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/bpod_interaction.html">Bpod interaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/developing_plugins.html">Developing plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/contributing.html">Contributing</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/about.html">Project Info</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contents.html">Indices and tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pybpod</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Writing a protocol for Bpod</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/getting-started/writing-protocols.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="writing-a-protocol-for-bpod">
+<span id="writing-protocols-label"></span><h1>Writing a protocol for Bpod<a class="headerlink" href="#writing-a-protocol-for-bpod" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-a-bpod-protocol">
+<h2>What is a Bpod protocol?<a class="headerlink" href="#what-is-a-bpod-protocol" title="Permalink to this headline">¶</a></h2>
+<p>To use Bpod, you must first program a behavioral protocol. The following guide is based on the original version for <a class="reference external" href="https://sites.google.com/site/bpoddocumentation/bpod-user-guide/protocol-writing">Bpod Matlab</a>.</p>
+</div>
+<div class="section" id="protocol-example-explained">
+<h2>Protocol example explained<a class="headerlink" href="#protocol-example-explained" title="Permalink to this headline">¶</a></h2>
+<p>First, you will need to import Bpod modules.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span>    <span class="kn">from</span> <span class="nn">pybpodapi.bpod</span> <span class="kn">import</span> <span class="n">Bpod</span> <span class="c1"># Bpod main module</span>
+    <span class="kn">from</span> <span class="nn">pybpodapi.state_machine</span> <span class="kn">import</span> <span class="n">StateMachine</span> <span class="c1"># State machine module</span>
+    <span class="kn">from</span> <span class="nn">pybpodapi.bpod.hardware.events</span> <span class="kn">import</span> <span class="n">EventName</span> <span class="c1"># Input events labels</span>
+    <span class="kn">from</span> <span class="nn">pybpodapi.bpod.hardware.output_channels</span> <span class="kn">import</span> <span class="n">OutputChannel</span> <span class="c1"># Output action labels</span>
+</pre></div>
+</td></tr></table></div>
+<p>Then, initialize Bpod. The GUI will automatically set the serial port based on the serial port selected for the board and the workspace will be the subject folder.</p>
+<p>You can run several trials for each Bpod execution. In this example, we will use 5 trials. Each trial can be of type1 (rewarded left) or type2 (rewarded right).</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span>    <span class="n">nTrials</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">trialTypes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>  <span class="c1"># 1 (rewarded left) or 2 (rewarded right)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nTrials</span><span class="p">):</span>  <span class="c1"># Main loop</span>
+        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Trial: &#39;</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">thisTrialType</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">trialTypes</span><span class="p">)</span>  <span class="c1"># Randomly choose trial type =</span>
+        <span class="k">if</span> <span class="n">thisTrialType</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">stimulus</span> <span class="o">=</span> <span class="n">OutputChannel</span><span class="o">.</span><span class="n">PWM1</span>  <span class="c1"># set stimulus channel for trial type 1</span>
+            <span class="n">leftAction</span> <span class="o">=</span> <span class="s1">&#39;Reward&#39;</span>
+            <span class="n">rightAction</span> <span class="o">=</span> <span class="s1">&#39;Punish&#39;</span>
+            <span class="n">rewardValve</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">elif</span> <span class="n">thisTrialType</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">stimulus</span> <span class="o">=</span> <span class="n">OutputChannel</span><span class="o">.</span><span class="n">PWM3</span>  <span class="c1"># set stimulus channel for trial type 1</span>
+            <span class="n">leftAction</span> <span class="o">=</span> <span class="s1">&#39;Punish&#39;</span>
+            <span class="n">rightAction</span> <span class="o">=</span> <span class="s1">&#39;Reward&#39;</span>
+            <span class="n">rewardValve</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+</td></tr></table></div>
+<p>Now, inside the loop, we will create and configure a state machine for each trial.
+A state machine has <em>state name</em>, <em>state timer</em>, <em>names of states to enter if certain events occur</em> and <em>output actions</em>.
+Please see <a class="reference external" href="http://pybpod-api.readthedocs.io/en/latest/api_reference/pybpodapi/state_machine/index.html#api-state-machine-label" title="(in pybpod-api v1.5.3)"><span class="xref std std-ref">State Machine API</span></a> for detailed information about state machine design.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">We strongly advise to use the API available labels as  described on the examples <a class="reference external" href="http://pybpod-api.readthedocs.io/en/latest/getting_started/output_action_codes.html#api-output-action-codes-label" title="(in pybpod-api v1.5.3)"><span class="xref std std-ref">output actions</span></a> and <a class="reference external" href="http://pybpod-api.readthedocs.io/en/latest/getting_started/event_codes.html#api-input-event-codes-label" title="(in pybpod-api v1.5.3)"><span class="xref std std-ref">input events</span></a>.</p>
+</div>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48</pre></div></td><td class="code"><div class="highlight"><pre><span></span>        <span class="n">sma</span> <span class="o">=</span> <span class="n">StateMachine</span><span class="p">(</span><span class="n">my_bpod</span><span class="o">.</span><span class="n">hardware</span><span class="p">)</span>
+
+        <span class="n">sma</span><span class="o">.</span><span class="n">add_state</span><span class="p">(</span>
+            <span class="n">state_name</span><span class="o">=</span><span class="s1">&#39;WaitForPort2Poke&#39;</span><span class="p">,</span>
+            <span class="n">state_timer</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">state_change_conditions</span><span class="o">=</span><span class="p">{</span><span class="n">EventName</span><span class="o">.</span><span class="n">Port2In</span><span class="p">:</span> <span class="s1">&#39;FlashStimulus&#39;</span><span class="p">},</span>
+            <span class="n">output_actions</span><span class="o">=</span><span class="p">[(</span><span class="n">OutputChannel</span><span class="o">.</span><span class="n">PWM2</span><span class="p">,</span> <span class="mi">255</span><span class="p">)])</span>
+        <span class="n">sma</span><span class="o">.</span><span class="n">add_state</span><span class="p">(</span>
+            <span class="n">state_name</span><span class="o">=</span><span class="s1">&#39;FlashStimulus&#39;</span><span class="p">,</span>
+            <span class="n">state_timer</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+            <span class="n">state_change_conditions</span><span class="o">=</span><span class="p">{</span><span class="n">EventName</span><span class="o">.</span><span class="n">Tup</span><span class="p">:</span> <span class="s1">&#39;WaitForResponse&#39;</span><span class="p">},</span>
+            <span class="n">output_actions</span><span class="o">=</span><span class="p">[(</span><span class="n">stimulus</span><span class="p">,</span> <span class="mi">255</span><span class="p">)])</span>
+        <span class="n">sma</span><span class="o">.</span><span class="n">add_state</span><span class="p">(</span>
+            <span class="n">state_name</span><span class="o">=</span><span class="s1">&#39;WaitForResponse&#39;</span><span class="p">,</span>
+            <span class="n">state_timer</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">state_change_conditions</span><span class="o">=</span><span class="p">{</span><span class="n">EventName</span><span class="o">.</span><span class="n">Port1In</span><span class="p">:</span> <span class="n">leftAction</span><span class="p">,</span> <span class="n">EventName</span><span class="o">.</span><span class="n">Port3In</span><span class="p">:</span> <span class="n">rightAction</span><span class="p">},</span>
+            <span class="n">output_actions</span><span class="o">=</span><span class="p">[])</span>
+        <span class="n">sma</span><span class="o">.</span><span class="n">add_state</span><span class="p">(</span>
+            <span class="n">state_name</span><span class="o">=</span><span class="s1">&#39;Reward&#39;</span><span class="p">,</span>
+            <span class="n">state_timer</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+            <span class="n">state_change_conditions</span><span class="o">=</span><span class="p">{</span><span class="n">EventName</span><span class="o">.</span><span class="n">Tup</span><span class="p">:</span> <span class="s1">&#39;exit&#39;</span><span class="p">},</span>
+            <span class="n">output_actions</span><span class="o">=</span><span class="p">[(</span><span class="n">OutputChannel</span><span class="o">.</span><span class="n">Valve</span><span class="p">,</span> <span class="n">rewardValve</span><span class="p">)])</span>  <span class="c1"># Reward correct choice</span>
+        <span class="n">sma</span><span class="o">.</span><span class="n">add_state</span><span class="p">(</span>
+            <span class="n">state_name</span><span class="o">=</span><span class="s1">&#39;Punish&#39;</span><span class="p">,</span>
+            <span class="n">state_timer</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+            <span class="n">state_change_conditions</span><span class="o">=</span><span class="p">{</span><span class="n">EventName</span><span class="o">.</span><span class="n">Tup</span><span class="p">:</span> <span class="s1">&#39;exit&#39;</span><span class="p">},</span>
+            <span class="n">output_actions</span><span class="o">=</span><span class="p">[(</span><span class="n">OutputChannel</span><span class="o">.</span><span class="n">LED</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="n">OutputChannel</span><span class="o">.</span><span class="n">LED</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="n">OutputChannel</span><span class="o">.</span><span class="n">LED</span><span class="p">,</span> <span class="mi">3</span><span class="p">)])</span>  <span class="c1"># Signal incorrect choice</span>
+</pre></div>
+</td></tr></table></div>
+<p>After configuring the state machine, we send it to the Bpod device by calling the method <em>send_state_machine</em>. We are then ready to run the next trial, by calling the <em>run_state_machine</em> method.
+On run completion, we can print the data available for the current trial including events and states.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>49
+50
+51
+52
+53
+54
+55</pre></div></td><td class="code"><div class="highlight"><pre><span></span>        <span class="n">my_bpod</span><span class="o">.</span><span class="n">send_state_machine</span><span class="p">(</span><span class="n">sma</span><span class="p">)</span>  <span class="c1"># Send state machine description to Bpod device</span>
+
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Waiting for poke. Reward: &quot;</span><span class="p">,</span> <span class="s1">&#39;left&#39;</span> <span class="k">if</span> <span class="n">thisTrialType</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;right&#39;</span><span class="p">)</span>
+
+        <span class="n">my_bpod</span><span class="o">.</span><span class="n">run_state_machine</span><span class="p">(</span><span class="n">sma</span><span class="p">)</span>  <span class="c1"># Run state machine</span>
+
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Current trial info: &quot;</span><span class="p">,</span> <span class="n">my_bpod</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">current_trial</span><span class="p">())</span>
+</pre></div>
+</td></tr></table></div>
+<p>Finally, after the loop finishes, we can stop Bpod execution.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>56</pre></div></td><td class="code"><div class="highlight"><pre><span></span>    <span class="n">my_bpod</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>  <span class="c1"># Disconnect Bpod and perform post-run actions</span>
+</pre></div>
+</td></tr></table></div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p><code class="xref py py-class docutils literal"><span class="pre">pybpodapi.bpod.Bpod</span></code></p>
+<p><code class="xref py py-meth docutils literal"><span class="pre">pybpodapi.bpod.Bpod.start()</span></code></p>
+<p><code class="xref py py-class docutils literal"><span class="pre">pybpodapi.state_machine.StateMachine</span></code></p>
+<p><code class="xref py py-meth docutils literal"><span class="pre">pybpodapi.state_machine.StateMachine.add_state()</span></code></p>
+<p><a class="reference external" href="http://pybpod-api.readthedocs.io/en/latest/api_reference/pybpodapi/bpod/hardware/output_channels.html#pybpodapi.bpod.hardware.output_channels.OutputChannel" title="(in pybpod-api v1.5.3)"><code class="xref py py-class docutils literal"><span class="pre">pybpodapi.bpod.hardware.output_channels.OutputChannel</span></code></a></p>
+<p><a class="reference external" href="http://pybpod-api.readthedocs.io/en/latest/api_reference/pybpodapi/bpod/hardware/events.html#pybpodapi.bpod.hardware.events.EventName" title="(in pybpod-api v1.5.3)"><code class="xref py py-class docutils literal"><span class="pre">pybpodapi.bpod.hardware.events.EventName</span></code></a></p>
+<p><code class="xref py py-meth docutils literal"><span class="pre">pybpodapi.bpod.Bpod.send_state_machine()</span></code></p>
+<p><code class="xref py py-meth docutils literal"><span class="pre">pybpodapi.bpod.Bpod.run_state_machine()</span></code></p>
+<p class="last"><code class="xref py py-meth docutils literal"><span class="pre">pybpodapi.bpod.Bpod.stop()</span></code></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plugins.html" class="btn btn-neutral float-right" title="Plugins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="basic-usage.html" class="btn btn-neutral" title="Basic usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Scientific Sofware Platform (CF).
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.2.0.beta',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
