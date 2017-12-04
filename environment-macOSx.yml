@@ -1,0 +1,44 @@
+name: pybpod-environment
+channels:
+- anaconda
+- conda-forge
+- defaults
+dependencies:
+- git
+- backports=1.0=py35_1
+- backports.functools_lru_cache=1.4=py35_1
+- freetype
+- icu
+- jpeg
+- libpng
+- matplotlib
+- openssl
+- qscintilla2
+- qt
+- sqlite
+- zlib
+- ca-certificates
+- certifi
+- cycler
+- icc_rt
+- intel-openmp
+- mkl
+- numpy
+- pip
+- pyparsing
+- pyqt
+- pyserial
+- python=3.5.4
+- python-dateutil
+- pytz
+- setuptools
+- sip
+- six
+- tornado
+- wheel
+- wincertstore
+- pip:
+  - anyqt==0.0.8
+  - backports.functools-lru-cache==1.4
+  - send2trash==1.4.2
+prefix: pybpod-environment
