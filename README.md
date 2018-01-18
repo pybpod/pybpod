@@ -1,6 +1,6 @@
 # PyBpod #
 
-**version:** 1.0.0
+**version:** 1.0.1
 
 PyBpod is a GUI application that enables interaction with the Bpod device from [Sanworks](https://sanworks.io/).
 
