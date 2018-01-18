@@ -1,5 +1,7 @@
 # PyBpod #
 
+**version:** 1.0.0
+
 PyBpod is a GUI application that enables interaction with the Bpod device from [Sanworks](https://sanworks.io/).
 
 This project is maintained by a team of SW developers at the Champalimaud Foundation.
