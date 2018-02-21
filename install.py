@@ -6,7 +6,6 @@ from subprocess import call
 
 SUBMODULES_FOLDERS = [
     'logging-bootstrap',
-    'pysettings',
     'pyforms',
     'pyforms-generic-editor',
     'pybpod-api',
