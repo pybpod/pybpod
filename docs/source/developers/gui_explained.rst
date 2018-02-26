@@ -55,7 +55,7 @@ Pysettings
 ----------
 Python library to provide settings files for modular applications.
 
-https://github.com/UmSenhorQualquer/pysettings
+https://github.com/UmSenhorQualquer/pyforms
 
 
 Pybranch

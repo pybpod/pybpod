@@ -25,7 +25,7 @@ import recommonmark.parser
 sys.path.append(os.path.abspath('../../pybpodgui_plugin'))
 sys.path.append(os.path.abspath('../../'))
 
-from pysettings import conf
+from pyforms import conf
 conf += 'pyforms_generic_editor.settings'
 conf += 'pyforms.settings'
 
