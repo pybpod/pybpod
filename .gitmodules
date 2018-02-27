@@ -40,3 +40,6 @@
 [submodule "pge-plugin-terminal"]
 	path = pge-plugin-terminal
 	url = https://UmSenhorQualquer@bitbucket.org/fchampalimaud/pge-plugin-terminal.git
+[submodule "pybpod-gui-plugin-emulator"]
+	path = pybpod-gui-plugin-emulator
+	url = https://UmSenhorQualquer@bitbucket.org/fchampalimaud/pybpod-gui-plugin-emulator.git
