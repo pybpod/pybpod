@@ -6,7 +6,6 @@ from subprocess import call
 
 SUBMODULES_FOLDERS = [
     'logging-bootstrap',
-    'pysettings',
     'pyforms',
     'pyforms-generic-editor',
     'pybpod-api',
@@ -16,7 +15,9 @@ SUBMODULES_FOLDERS = [
     'pybpod-gui-plugin-session-history',
     'pybpod-gui-plugin-timeline',
     'pybpod-rotary-encoder-module',
-    'safe-collaborative-architecture'
+    'safe-collaborative-architecture',
+    'pybpod-gui-plugin-oldformat',
+    'pge-plugin-terminal'
 ]
 
 DEFAULT_PLUGINS = [
@@ -29,7 +30,7 @@ DEFAULT_PLUGINS = [
 
 def install():
     for submodule in SUBMODULES_FOLDERS:
-        pip.main(['install', '--upgrade', os.path.join(submodule,'.')])
+        pip.main(['install', '-e', os.path.join(submodule,'.')])
 
 def check_submodules():
     for submodule in SUBMODULES_FOLDERS:
