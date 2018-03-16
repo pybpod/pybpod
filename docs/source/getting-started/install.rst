@@ -27,7 +27,7 @@ Install
 
 .. code::
 
-  activate pybpod-environment
+  source activate pybpod-environment
 
 4. Clone the PyBpod repository.
 
@@ -63,7 +63,7 @@ Run
 
 .. code::
 
-  activate pybpod-environment
+  source activate pybpod-environment
 
 2. Run the application.
 
@@ -80,7 +80,7 @@ Update
 
 .. code::
 
-  activate pybpod-environment
+  source activate pybpod-environment
 
 2. Execute the script "update.py".
 
