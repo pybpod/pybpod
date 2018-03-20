@@ -56,7 +56,6 @@ dependencies:
     - cffi==1.11.5
     - kiwisolver==1.0.1
     - matplotlib==2.2.0
-    - mccdaqr==1.0
     - opencv-python==3.4.0.12 
     - pycparser==2.18
     - pyopengl==3.1.0
@@ -65,5 +64,7 @@ dependencies:
     - scipy==1.0.0
     - send2trash==1.4.2
     - visvis==1.10.0
+prefix: pybpod-environment
+
 
 
