@@ -17,7 +17,8 @@ SUBMODULES_FOLDERS = [
     'pybpod-rotary-encoder-module',
     'safe-collaborative-architecture',
     'pybpod-gui-plugin-oldformat',
-    'pge-plugin-terminal'
+    'pge-plugin-terminal',
+    'pybpod-gui-plugin-trial-timeline'
 ]
 
 DEFAULT_PLUGINS = [

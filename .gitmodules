@@ -43,3 +43,6 @@
 [submodule "pybpod-gui-plugin-emulator"]
 	path = pybpod-gui-plugin-emulator
 	url = https://UmSenhorQualquer@bitbucket.org/fchampalimaud/pybpod-gui-plugin-emulator.git
+[submodule "pybpod-gui-plugin-trial-timeline"]
+	path = pybpod-gui-plugin-trial-timeline
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-trial-timeline.git
