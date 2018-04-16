@@ -8,3 +8,7 @@ app\.log
 test-project/
 
 docs/build/
+
+*.driveupload
+
+temp/
