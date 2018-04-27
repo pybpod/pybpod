@@ -1,0 +1,16 @@
+name: pybpod-env
+dependencies:
+  - python=3.5
+  - pyqt=5
+  - numpy
+  - pip:
+      - Send2Trash
+      - AnyQt
+      - pyserial>=3.1.1
+      - https://github.com/dateutil/dateutil/archive/master.zip
+      - https://github.com/snide/sphinx_rtd_theme/archive/master.zip
+      - https://bitbucket.org/fchampalimaud/logging-bootstrap/get/master.zip
+      - https://github.com/UmSenhorQualquer/pyforms/archive/master.zip
+      - https://bitbucket.org/fchampalimaud/pybpod-api/get/master.zip
+      - https://bitbucket.org/fchampalimaud/pybpod-gui-api/get/master.zip
+      - https://bitbucket.org/fchampalimaud/pybpod-gui-plugin/get/master.zip
