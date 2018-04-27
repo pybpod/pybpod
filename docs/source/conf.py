@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# pybpod-gui-plugin documentation build configuration file, created by
+# pybpod documentation build configuration file, created by
 # sphinx-quickstart on Thu Dec 15 18:16:05 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -219,7 +219,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'pybpodgui_plugin-guidoc'
+htmlhelp_basename = 'pybpod-guidoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -241,7 +241,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'pybpod-gui-plugin.tex', 'pybpod-gui-plugin Documentation',
+  (master_doc, 'pybpod.tex', 'pybpod Documentation',
    'Scientific Sofware Platform (CF)', 'manual'),
 ]
 
@@ -271,7 +271,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'pybpod-gui-plugin', 'pybpod-gui-plugin Documentation',
+    (master_doc, 'pybpod', 'pybpod Documentation',
      [author], 1)
 ]
 
@@ -285,8 +285,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'pybpod-gui-plugin', 'pybpod-gui-plugin Documentation',
-   author, 'pybpod-gui-plugin', 'One line description of project.',
+  (master_doc, 'pybpod', 'pybpod Documentation',
+   author, 'pybpod', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -375,7 +375,9 @@ epub_exclude_files = ['search.html']
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'python': ('https://docs.python.org/3.5', None),
                        'pybpodapi': ('http://pybpod-api.readthedocs.io/en/latest', None),
-#                       'pyforms' : ('https://pyforms.readthedocs.io', None)
+                       'pybpodgui_api': ('http://pybpod-gui-api.readthedocs.io/en/latest', None),
+                       'pybpodgui_plugin': ('http://pybpod-gui-plugin.readthedocs.io/en/latest', None),
+                       'pyforms' : ('https://pyforms.readthedocs.io', None)
                        }
 
 
