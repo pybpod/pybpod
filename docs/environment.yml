@@ -1,4 +1,4 @@
-name: pybpod-gui-api-env
+name: pybpod-env
 dependencies:
   - python=3.5
   - pyqt=5
