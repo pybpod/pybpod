@@ -34,11 +34,9 @@ dependencies:
 - perl=5.26.0=h5b8ca18_0
 - pip=9.0.1=py35h33ce766_4
 - pyparsing=2.2.0=py35h31fab04_0
-- pyqt=5.6.0=py35hbd126f6_6
 - python=3.5.4=he720263_23
 - python-dateutil=2.6.1=py35h10515e0_1
 - pytz=2017.3=py35heeb7564_0
-- qt=5.6.2=h9975529_14
 - readline=7.0=hc1231fa_4
 - setuptools=36.5.0=py35h52cde6a_0
 - sip=4.18.1=py35h79e1f92_2
@@ -51,6 +49,7 @@ dependencies:
 - zlib=1.2.11=hf3cbc9b_2
 - pyserial=3.4=py35h39e1244_0
 - pip:
+  - PyQt5==5.10.1
   - anyqt==0.0.8
   - send2trash==1.4.2
-prefix: pybpod-environment
+  - pandas==0.22.0
