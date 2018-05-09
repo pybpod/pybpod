@@ -8,3 +8,5 @@ app\.log
 test-project/
 
 docs/build/
+
+\.DS_Store

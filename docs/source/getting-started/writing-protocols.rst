@@ -19,11 +19,8 @@ First, you will need to import Bpod modules.
     :linenos:
     :lineno-start: 1
 
-        from pybpodapi.bpod import Bpod # Bpod main module
-        from pybpodapi.state_machine import StateMachine # State machine module
-        from pybpodapi.bpod.hardware.events import EventName # Input events labels
-        from pybpodapi.bpod.hardware.output_channels import OutputChannel # Output action labels
-
+        # Bpod main module and State machine module
+        from pybpodapi.protocol import Bpod, StateMachine 
 
 Then, initialize Bpod. The GUI will automatically set the serial port based on the serial port selected for the board and the workspace will be the subject folder.
 
@@ -47,12 +44,12 @@ You can run several trials for each Bpod execution. In this example, we will use
             print('Trial: ', i+1)
             thisTrialType = random.choice(trialTypes)  # Randomly choose trial type =
             if thisTrialType == 1:
-                stimulus = OutputChannel.PWM1  # set stimulus channel for trial type 1
+                stimulus = 'PWM1'  # set stimulus channel for trial type 1
                 leftAction = 'Reward'
                 rightAction = 'Punish'
                 rewardValve = 1
             elif thisTrialType == 2:
-                stimulus = OutputChannel.PWM3  # set stimulus channel for trial type 1
+                stimulus = 'PWM3'  # set stimulus channel for trial type 1
                 leftAction = 'Punish'
                 rightAction = 'Reward'
                 rewardValve = 3
@@ -61,10 +58,6 @@ You can run several trials for each Bpod execution. In this example, we will use
 Now, inside the loop, we will create and configure a state machine for each trial.
 A state machine has *state name*, *state timer*, *names of states to enter if certain events occur* and *output actions*.
 Please see :ref:`State Machine API <api_state_machine-label>` for detailed information about state machine design.
-
-.. warning::
-    We strongly advise to use the API available labels as  described on the examples :ref:`output actions <api_output_action_codes-label>` and :ref:`input events <api_input_event_codes-label>`.
-
 
 .. code-block:: python
     :linenos:
@@ -75,28 +68,28 @@ Please see :ref:`State Machine API <api_state_machine-label>` for detailed infor
             sma.add_state(
                 state_name='WaitForPort2Poke',
                 state_timer=1,
-                state_change_conditions={EventName.Port2In: 'FlashStimulus'},
+                state_change_conditions={'Port2In': 'FlashStimulus'},
                 output_actions=[(OutputChannel.PWM2, 255)])
             sma.add_state(
                 state_name='FlashStimulus',
                 state_timer=0.1,
-                state_change_conditions={EventName.Tup: 'WaitForResponse'},
+                state_change_conditions={'Tup': 'WaitForResponse'},
                 output_actions=[(stimulus, 255)])
             sma.add_state(
                 state_name='WaitForResponse',
                 state_timer=1,
-                state_change_conditions={EventName.Port1In: leftAction, EventName.Port3In: rightAction},
+                state_change_conditions={'Port1In': leftAction, 'Port3In': rightAction},
                 output_actions=[])
             sma.add_state(
                 state_name='Reward',
                 state_timer=0.1,
-                state_change_conditions={EventName.Tup: 'exit'},
-                output_actions=[(OutputChannel.Valve, rewardValve)])  # Reward correct choice
+                state_change_conditions={'Tup': 'exit'},
+                output_actions=[('Valve', rewardValve)])  # Reward correct choice
             sma.add_state(
                 state_name='Punish',
                 state_timer=3,
-                state_change_conditions={EventName.Tup: 'exit'},
-                output_actions=[(OutputChannel.LED, 1), (OutputChannel.LED, 2), (OutputChannel.LED, 3)])  # Signal incorrect choice
+                state_change_conditions={'Tup': 'exit'},
+                output_actions=[('LED', 1), ('LED', 2), ('LED', 3)])  # Signal incorrect choice
 
 
 After configuring the state machine, we send it to the Bpod device by calling the method *send_state_machine*. We are then ready to run the next trial, by calling the *run_state_machine* method.
@@ -122,24 +115,9 @@ Finally, after the loop finishes, we can stop Bpod execution.
     :linenos:
     :lineno-start: 56
 
-        my_bpod.stop()  # Disconnect Bpod and perform post-run actions
+        my_bpod.close()  # Disconnect Bpod and perform post-run actions
 
 .. seealso::
 
-    :py:class:`pybpodapi.bpod.Bpod`
+    `PyBpod API <http://pybpod-api.readthedocs.io/en/latest/>`_
 
-    :py:meth:`pybpodapi.bpod.Bpod.start`
-
-    :py:class:`pybpodapi.state_machine.StateMachine`
-
-    :py:meth:`pybpodapi.state_machine.StateMachine.add_state`
-
-    :py:class:`pybpodapi.bpod.hardware.output_channels.OutputChannel`
-
-    :py:class:`pybpodapi.bpod.hardware.events.EventName`
-
-    :py:meth:`pybpodapi.bpod.Bpod.send_state_machine`
-
-    :py:meth:`pybpodapi.bpod.Bpod.run_state_machine`
-
-    :py:meth:`pybpodapi.bpod.Bpod.stop`

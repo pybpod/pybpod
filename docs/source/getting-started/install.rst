@@ -6,21 +6,35 @@
 .. _installing-label:
 
 **********
-Install
+Installing
 **********
 
 
 1. Download & install `Anaconda <https://www.anaconda.com/download/>`_ or `Miniconda <https://conda.io/miniconda.html>`_.
-2. Download the environment configuration file for your Operating System ( `Windows 10 <https://bitbucket.org/fchampalimaud/pybpod/raw/e6c1c8da96c240ae638309359a97b28a2d36ca55/environment-windows-10.yml>`_ ) and create a virtual environment with it by executing the following commands in the "Anaconda Prompt".
+2. Download the environment configuration file for your Operating System ( `Windows 10 <https://bitbucket.org/fchampalimaud/pybpod/raw/e6c1c8da96c240ae638309359a97b28a2d36ca55/environment-windows-10.yml>`_, `Ubuntu 17.10 <https://bitbucket.org/fchampalimaud/pybpod/raw/9573598048ff6513fa22a6502f21dbb0111ebd1e/environment-ubuntu-17.10.yml>`_, `Mac OSx <https://bitbucket.org/fchampalimaud/pybpod/raw/8044a7903c0418a8b2b8579632a64125eaad6788/environment-macOSx.yml>`_ ) and create a virtual environment with it by executing the following commands in the "Anaconda Prompt".
 
 .. code::
 
   conda env create -f environment-windows-10.yml
+  or 
+  conda env create -f environment-ubuntu-17.10.yml
+  or 
+  conda env create -f environment-macOSx.yml
 
 .. note::
 
-  * On windows if you install Anaconda/Miniconda for all the users, you should make sure you run the "Anaconda Prompt" as administrator.  
-  * To avoid issues, make sure you install Anaconda/Miniconda only for your user.
+  Windows
+    * On windows if you install Anaconda/Miniconda for all the users, you should make sure you run the "Anaconda Prompt" as administrator.  
+    * To avoid issues, make sure you install Anaconda/Miniconda only for your user.
+  Linux
+    * Make sure your user has permissions to access the serial ports.
+    * Execute the next command:
+
+      .. code::
+
+        sudo usermod -a -G dialout [your username]
+
+    * Restart the computer.
 
 
 3. Activate the environment you just created.
@@ -56,7 +70,7 @@ Install
 
 
 ********************
-Run
+Execute PyBpod GUI
 ********************
 
 1. Open "Anaconda Prompt" and activate the "pybpod-environment".
@@ -73,7 +87,7 @@ Run
 
 
 *******************
-Update
+Update PyBpod GUI
 *******************
 
 1. Open the "Anaconda Prompt" and activate the "pybpod-environment".

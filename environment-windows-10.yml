@@ -43,5 +43,6 @@ dependencies:
   - anyqt==0.0.8
   - backports.functools-lru-cache==1.4
   - send2trash==1.4.2
+  - pandas==0.22.0
 prefix: pybpod-environment
 
