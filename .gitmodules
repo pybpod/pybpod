@@ -40,3 +40,6 @@
 [submodule "pybpod-gui-plugin-trial-timeline"]
 	path = pybpod-gui-plugin-trial-timeline
 	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-trial-timeline
+[submodule "pybpod-analogoutput-module"]
+	path = pybpod-analogoutput-module
+	url = https://bitbucket.org/fchampalimaud/pybpod-analogoutput-module
