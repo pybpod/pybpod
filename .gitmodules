@@ -43,3 +43,6 @@
 [submodule "pybpod-analogoutput-module"]
 	path = pybpod-analogoutput-module
 	url = https://bitbucket.org/fchampalimaud/pybpod-analogoutput-module
+[submodule "pybpod-alyx-module"]
+	path = pybpod-alyx-module
+	url = https://bitbucket.org/fchampalimaud/pybpod-alyx-module/

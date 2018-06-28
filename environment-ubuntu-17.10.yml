@@ -56,5 +56,6 @@ dependencies:
   - anyqt==0.0.8
   - send2trash==1.4.2
   - pandas==0.22.0
+  - confapp
 prefix: pybpod-environment
 
