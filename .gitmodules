@@ -40,9 +40,9 @@
 [submodule "pybpod-gui-plugin-stmdiagram"]
 	path = pybpod-gui-plugin-stmdiagram
 	url = git@bitbucket.org:fchampalimaud/pybpod-gui-plugin-stmdiagram.git
-[submodule "pybpod-analogoutput-module"]
-	path = pybpod-analogoutput-module
-	url = git@bitbucket.org:fchampalimaud/pybpod-analogoutput-module
 [submodule "pybpod-alyx-module"]
 	path = pybpod-alyx-module
 	url = git@bitbucket.org:fchampalimaud/pybpod-alyx-module/
+[submodule "pybpod-gui-plugin-waveplayer"]
+	path = pybpod-gui-plugin-waveplayer
+	url = git@bitbucket.org:fchampalimaud/pybpod-gui-plugin-waveplayer
