@@ -1,45 +1,48 @@
 [submodule "pybpod-api"]
 	path = pybpod-api
-	url = git@bitbucket.org:fchampalimaud/pybpod-api.git
+	url = https://bitbucket.org/fchampalimaud/pybpod-api.git
 [submodule "pybpod-gui-api"]
 	path = pybpod-gui-api
-	url = git@bitbucket.org:fchampalimaud/pybpod-gui-api.git
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-api.git
 [submodule "pybpod-gui-plugin"]
 	path = pybpod-gui-plugin
-	url = git@bitbucket.org:fchampalimaud/pybpod-gui-plugin.git
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin.git
 [submodule "pybpod-gui-plugin-session-history"]
 	path = pybpod-gui-plugin-session-history
-	url = git@bitbucket.org:fchampalimaud/pybpod-gui-plugin-session-history.git
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-session-history.git
 [submodule "pybpod-gui-plugin-timeline"]
 	path = pybpod-gui-plugin-timeline
-	url = git@bitbucket.org:fchampalimaud/pybpod-gui-plugin-timeline.git
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-timeline.git
 [submodule "pybpod-rotary-encoder-module"]
 	path = pybpod-rotary-encoder-module
-	url = git@bitbucket.org:fchampalimaud/pybpod-rotary-encoder-module.git
+	url = https://bitbucket.org/fchampalimaud/pybpod-rotary-encoder-module.git
 [submodule "pyforms-generic-editor"]
 	path = pyforms-generic-editor
-	url = git@bitbucket.org:fchampalimaud/pyforms-generic-editor.git
-[submodule "pyforms"]
-	path = pyforms
-	url = https://github.com/UmSenhorQualquer/pyforms.git
+	url = https://bitbucket.org/fchampalimaud/pyforms-generic-editor.git
 [submodule "pyforms"]
 	path = pyforms
 	url = https://github.com/UmSenhorQualquer/pyforms.git
 [submodule "logging-bootstrap"]
 	path = logging-bootstrap
-	url = git@bitbucket.org:fchampalimaud/logging-bootstrap.git
+	url = https://bitbucket.org/fchampalimaud/logging-bootstrap.git
 [submodule "safe-collaborative-architecture"]
 	path = safe-collaborative-architecture
-	url = git@bitbucket.org:fchampalimaud/safe-collaborative-architecture.git
+	url = https://bitbucket.org/fchampalimaud/safe-collaborative-architecture.git
 [submodule "pge-plugin-terminal"]
 	path = pge-plugin-terminal
-	url = git@bitbucket.org:fchampalimaud/pge-plugin-terminal.git
+	url = https://bitbucket.org/fchampalimaud/pge-plugin-terminal.git
 [submodule "pybpod-gui-plugin-emulator"]
 	path = pybpod-gui-plugin-emulator
-	url = git@bitbucket.org:fchampalimaud/pybpod-gui-plugin-emulator.git
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-emulator.git
 [submodule "pybpod-gui-plugin-trial-timeline"]
 	path = pybpod-gui-plugin-trial-timeline
-	url = git@bitbucket.org:fchampalimaud/pybpod-gui-plugin-trial-timeline
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-trial-timeline
 [submodule "pybpod-gui-plugin-stmdiagram"]
 	path = pybpod-gui-plugin-stmdiagram
-	url = git@bitbucket.org:fchampalimaud/pybpod-gui-plugin-stmdiagram.git
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-stmdiagram.git
+[submodule "pybpod-alyx-module"]
+	path = pybpod-alyx-module
+	url = https://bitbucket.org/fchampalimaud/pybpod-alyx-module/
+[submodule "pybpod-gui-plugin-waveplayer"]
+	path = pybpod-gui-plugin-waveplayer
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-waveplayer
