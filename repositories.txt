@@ -1,0 +1,6 @@
+pyforms
+PyForms-GUI
+PyForms-Web
+PyForms-Terminal
+orquestra
+pyserial
