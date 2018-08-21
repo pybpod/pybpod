@@ -28,7 +28,7 @@ DEFAULT_PLUGINS = [
 
 def install():
     for submodule in SUBMODULES_FOLDERS:
-        pip.main(['install', '-e', os.path.join(submodule,'.')])
+        call(['pip', 'install', '-e', os.path.join(submodule,'.')])
 
 def check_submodules():
     for submodule in SUBMODULES_FOLDERS:
