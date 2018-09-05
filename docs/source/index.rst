@@ -15,7 +15,6 @@ What is PyBpod?
 ===================
 
 .. image:: /_images/bpod_gui_sample.png
-   :scale: 100 %
 
 **PyBpod** is a GUI application that enables interaction with the latest `Bpod device <https://sanworks.io/shop/viewproduct?productID=1011>`_ version.
 
@@ -25,7 +24,6 @@ What is Bpod?
 -------------
 
 .. image:: /_images/pybpodapi-logo.png
-   :scale: 100 %
 
 
 **Bpod** is a system from `Sanworks <https://sanworks.io/index.php>`_ for precise measurement of small animal behavior.

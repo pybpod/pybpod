@@ -10,5 +10,3 @@ python:
 formats:
     - epub
     - pdf
-
-requirements_file: requirements-rtd.txt
