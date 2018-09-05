@@ -21,15 +21,6 @@ import os
 import shlex
 import recommonmark.parser
 
-sys.path.append(os.path.abspath('../../pybpodgui_plugin'))
-sys.path.append(os.path.abspath('../../'))
-
-from confapp import conf
-conf += 'pyforms_generic_editor.settings'
-conf += 'pyforms.settings'
-
-import pybpodgui_plugin
-
 
 # -- Project information -----------------------------------------------------
 
@@ -38,9 +29,9 @@ copyright = '2018, Ricardo Ribeiro'
 author = 'Ricardo Ribeiro'
 
 # The short X.Y version
-version = pybpodgui_plugin.__version__
+version = 1.0
 # The full version, including alpha/beta/rc tags.
-release = pybpodgui_plugin.__version__
+release = 1.0
 
 
 # -- General configuration ---------------------------------------------------
@@ -218,7 +209,7 @@ intersphinx_mapping = {'https://docs.python.org/': None,
                        'pybpodapi': ('http://pybpod-api.readthedocs.io/en/latest', None),
                        'pybpodgui_api': ('http://pybpod-gui-api.readthedocs.io/en/latest', None),
                        'pybpodgui_plugin': ('http://pybpod-gui-plugin.readthedocs.io/en/latest', None),
-                       'pyforms' : ('https://pyforms.readthedocs.io', None)
+                       'pyforms_gui' : ('https://pyforms-gui.readthedocs.io', None)
                        }
 
 # -- Options for todo extension ----------------------------------------------
