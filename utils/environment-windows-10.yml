@@ -44,6 +44,7 @@ dependencies:
   - backports.functools-lru-cache==1.4
   - send2trash==1.4.2
   - pandas==0.22.0
+  - scipy
   - confapp==1.0.0
 prefix: pybpod-environment
 

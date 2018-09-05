@@ -19,7 +19,7 @@ SUBMODULES_FOLDERS = [
     # PLUGINS
     'plugins/pge-plugin-terminal',
     'plugins/pybpod-alyx-module',
-    'plugins/pybpod-gui-plugin-emulator',
+    #'plugins/pybpod-gui-plugin-emulator',
     'plugins/pybpod-gui-plugin-session-history',
     'plugins/pybpod-gui-plugin-stmdiagram',
     'plugins/pybpod-gui-plugin-timeline',
