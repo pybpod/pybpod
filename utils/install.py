@@ -5,36 +5,39 @@ import pip, os
 from subprocess import call
 
 SUBMODULES_FOLDERS = [
-    'logging-bootstrap',
-    'pyforms-gui',
-    'pyforms-generic-editor',
-    'pybpod-api',
-    'pybpod-gui-api',
-    'pybpod-gui-plugin',
-    'pybpod-gui-plugin-session-history',
-    'pybpod-gui-plugin-timeline',
-    'pybpod-rotary-encoder-module',
-    'safe-collaborative-architecture',
-    'pge-plugin-terminal'
+    # LIBRARIES
+    'libraries/logging-bootstrap',
+    'libraries/pyforms-gui',
+    'libraries/pyforms-generic-editor',
+    'libraries/safe-collaborative-architecture',
+
+    # BASE
+    'base/pybpod-api',
+    'base/pybpod-gui-api',
+    'base/pybpod-gui-plugin',
+    
+    # PLUGINS
+    'plugins/pge-plugin-terminal',
+    'plugins/pybpod-alyx-module',
+    'plugins/pybpod-gui-plugin-emulator',
+    'plugins/pybpod-gui-plugin-session-history',
+    'plugins/pybpod-gui-plugin-stmdiagram',
+    'plugins/pybpod-gui-plugin-timeline',
+    'plugins/pybpod-gui-plugin-trial-timeline',
+    'plugins/pybpod-gui-plugin-waveplayer',
+    'plugins/pybpod-rotary-encoder-module',
 ]
 
 DEFAULT_PLUGINS = [
     'pybpodgui_plugin',
     'pybpodgui_plugin_timeline',
     'pybpodgui_plugin_session_history',
-    'pybpod_rotaryencoder_module'
 ]
 
 
 def install():
     for submodule in SUBMODULES_FOLDERS:
         call(['pip', 'install', '-e', os.path.join(submodule,'.')])
-
-def check_submodules():
-    for submodule in SUBMODULES_FOLDERS:
-        if not os.path.exists(os.path.join(submodule,'setup.py')):
-            call(["git", "submodule", "update", "--init", "--recursive"])
-            break
 
 def conf_default_settings():
     if not os.path.exists('user_settings.py'):
@@ -45,6 +48,5 @@ def conf_default_settings():
 
 
 if __name__=='__main__': 
-    check_submodules()
     install()
     conf_default_settings()
