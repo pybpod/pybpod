@@ -47,7 +47,7 @@ Installing
 
 .. code::
 
-  git clone https://UmSenhorQualquer@bitbucket.org/fchampalimaud/pybpod.git
+  git clone https://bitbucket.org/fchampalimaud/pybpod.git
 
 5. Access the created repository folder.
 
