@@ -46,6 +46,3 @@
 [submodule "pyforms-gui"]
 	path = libraries/pyforms-gui
 	url = https://github.com/UmSenhorQualquer/pyforms-gui.git
-[submodule "pyforms"]
-	path = pyforms
-	url = https://github.com/UmSenhorQualquer/pyforms.git
