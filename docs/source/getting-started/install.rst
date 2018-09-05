@@ -15,11 +15,11 @@ Installing
 
 .. code::
 
-  conda env create -f environment-windows-10.yml
+  conda env create -f utils/environment-windows-10.yml
   or 
-  conda env create -f environment-ubuntu-17.10.yml
+  conda env create -f utils/environment-ubuntu-17.10.yml
   or 
-  conda env create -f environment-macOSx.yml
+  conda env create -f utils/environment-macOSx.yml
 
 .. note::
 
@@ -60,13 +60,13 @@ Installing
 
 .. code::
 
-  python install.py
+  python utils/install.py
 
 7. Run the PyBpod application.
 
 .. code::
 
-  python -m pybpodgui_plugin
+  start-pybpod
 
 
 ********************
@@ -79,11 +79,11 @@ Execute PyBpod GUI
 
   activate pybpod-environment
 
-2. Run the application.
+2. Run the application, in your pybpod directory.
 
 .. code::
 
-  python -m pybpodgui_plugin
+  start-pybpod
 
 
 *******************
@@ -96,8 +96,11 @@ Update PyBpod GUI
 
   activate pybpod-environment
 
-2. Execute the script "update.py".
+2. Execute the next commands in your pybpod directory.
 
 .. code::
 
-  python update.py
+  git pull
+  git submodule update --init
+  git pull --recurse-submodules
+  git submodule update --recursive

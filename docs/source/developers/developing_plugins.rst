@@ -232,7 +232,7 @@ In our window, we will define a ControlList to list all the session history even
 
     (...)
 
-    from pyforms import BaseWidget
+    from pyforms.basewidget import BaseWidget
     from pyforms.controls import ControlProgress
     from pyforms.controls import ControlList
 

@@ -52,5 +52,6 @@ dependencies:
   - PyQt5==5.10.1
   - anyqt==0.0.8
   - send2trash==1.4.2
+  - scipy
   - pandas==0.22.0
   - confapp==1.0.0
