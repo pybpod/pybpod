@@ -1,0 +1,14 @@
+packages:
+    - pyforms
+    - PyForms-GUI
+    - PyForms-Web
+    - PyForms-Terminal
+    - orquestra
+    - pyserial
+    - Django
+recipes:
+    - Version 3:
+        description: XX
+        packages:
+            - pyforms: 3.5
+            - orquestra: 1.0

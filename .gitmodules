@@ -19,9 +19,6 @@
 [submodule "pyforms-generic-editor"]
 	path = pyforms-generic-editor
 	url = https://bitbucket.org/fchampalimaud/pyforms-generic-editor.git
-[submodule "pyforms"]
-	path = pyforms
-	url = https://github.com/UmSenhorQualquer/pyforms.git
 [submodule "logging-bootstrap"]
 	path = logging-bootstrap
 	url = https://bitbucket.org/fchampalimaud/logging-bootstrap.git
@@ -46,3 +43,6 @@
 [submodule "pybpod-gui-plugin-waveplayer"]
 	path = pybpod-gui-plugin-waveplayer
 	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-waveplayer
+[submodule "pyforms-gui"]
+	path = pyforms-gui
+	url = https://github.com/UmSenhorQualquer/pyforms-gui.git
