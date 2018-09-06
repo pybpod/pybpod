@@ -55,14 +55,19 @@ Installing
 
   cd pybpod
 
+6. Init the git submodules.
 
-6. Run the "install.py" script to install all necessary dependencies.
+.. code::
+
+  git submodule update --init
+
+7. Run the "install.py" script to install all necessary dependencies.
 
 .. code::
 
   python utils/install.py
 
-7. Run the PyBpod application.
+8. Run the PyBpod application.
 
 .. code::
 
