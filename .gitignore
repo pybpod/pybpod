@@ -12,3 +12,5 @@ docs/build/
 \.DS_Store
 
 *.log
+
+plugins/water-calibration-plugin/
