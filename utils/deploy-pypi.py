@@ -25,9 +25,10 @@ def version_compare(a, b):
 	for a_value, b_value in zip(a, b):
 		a_value = int(a_value)
 		b_value = int(b_value)
-		if a_value<b_value:
+		
+		if a_value>b_value:
 			return -1
-		elif a_value>b_value:
+		elif a_value<b_value:
 			return 1
 
 	if len(a)>len(b):
@@ -59,11 +60,12 @@ for search_dir in DIRECTORIES_TO_SEARCH_FORM:
 		
 		print( dir_name, version, remote_version )
 
-
+		
 		if len(remote_version)==0 or version_compare(version, remote_version[0])<0:
 			print('UPLOADING PYPI')
 
-			shutil.rmtree('./dist')
+			if os.path.isdir('./dist'):
+				shutil.rmtree('./dist')
 			Popen(['python', 'setup.py', 'sdist', 'bdist_wheel'])
 			Popen(['twine', 'upload', os.path.join('dist','*')])
 
