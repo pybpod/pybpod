@@ -62,12 +62,11 @@ for search_dir in DIRECTORIES_TO_SEARCH_FORM:
 
 		
 		if len(remote_version)==0 or version_compare(version, remote_version[0])<0:
-			print('UPLOADING PYPI')
+			print('----- UPLOADING PYPI -----', package_name)
 
-			if os.path.isdir('./dist'):
-				shutil.rmtree('./dist')
-			Popen(['python', 'setup.py', 'sdist', 'bdist_wheel'])
-			Popen(['twine', 'upload', os.path.join('dist','*')])
+			if os.path.isdir('./dist'): shutil.rmtree('./dist')
+			Popen(['python', 'setup.py', 'sdist', 'bdist_wheel'], stdout=PIPE).communicate()
+			Popen(['twine', 'upload', os.path.join('dist','*')]).communicate()
 
 		
 		os.chdir(CURRENT_DIRECTORY)
