@@ -77,7 +77,8 @@ ________________
 .. code::
 
   git clone https://bitbucket.org/fchampalimaud/pybpod.git
-
+  git submodule update --init
+  
 5. Access the created repository folder.
 
 .. code::
