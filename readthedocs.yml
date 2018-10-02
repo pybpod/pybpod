@@ -10,3 +10,6 @@ python:
 formats:
     - epub
     - pdf
+
+conda:
+  file: environment.yml

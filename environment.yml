@@ -1,0 +1,10 @@
+name: pybpod-environment
+channels:
+  - defaults
+dependencies:
+  - python=3.6
+  - pip:
+    - sphinx
+    - sphinx-autobuild
+    - sphinx-rtd-theme
+    - pybpods
