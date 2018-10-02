@@ -1,15 +1,15 @@
 # http://docs.readthedocs.io/en/latest/yaml-config.html
 
 python:
-   version: 3.5
+  version: 3.5
 
-#conda:
-#    file: docs/environment.yml
+conda:
+  file: docs/environment.yml
 
 # Build PDF & ePub
 formats:
-    - epub
-    - pdf
+  - epub
+  - pdf
 
 conda:
   file: environment.yml
