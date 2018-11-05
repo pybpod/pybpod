@@ -14,3 +14,6 @@ docs/build/
 *.log
 
 plugins/water-calibration-plugin/
+\.idea/
+
+\.vscode/
