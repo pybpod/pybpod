@@ -80,8 +80,9 @@ If you have any questions or want to report a problem with this library please f
    :includehidden:
    :caption: API reference
 
-   api_reference/pybpodgui_plugin/index
-   api_reference/diagrams
+   PyBpod API <https://pybpod-gui.readthedocs.io>
+   
+
 
 .. toctree::
    :hidden:

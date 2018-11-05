@@ -10,6 +10,45 @@ Installing
 **********
 
 
+.. note::
+
+  Linux
+    * Make sure your user has permissions to access the serial ports.
+    * Execute the next command:
+
+      .. code::
+
+        sudo usermod -a -G dialout [your username]
+
+    * Restart the computer.
+
+
+Quickest installation
+______________________ 
+
+1. Install Python 3.6.
+2. Install Pybpod from PyPi:
+
+.. code::
+
+  pip install pybpod
+
+3. Excute pybpod:
+
+.. code::
+
+  start-pybpod
+
+.. note::
+
+  On the first execution a user_settings.py file will be created on the User system folder.
+
+
+
+For developers
+________________
+
+
 1. Download & install `Anaconda <https://www.anaconda.com/download/>`_ or `Miniconda <https://conda.io/miniconda.html>`_.
 2. Download the environment configuration file for your Operating System ( `Windows 10 <https://bitbucket.org/fchampalimaud/pybpod/raw/e6c1c8da96c240ae638309359a97b28a2d36ca55/environment-windows-10.yml>`_, `Ubuntu 17.10 <https://bitbucket.org/fchampalimaud/pybpod/raw/9573598048ff6513fa22a6502f21dbb0111ebd1e/environment-ubuntu-17.10.yml>`_, `Mac OSx <https://bitbucket.org/fchampalimaud/pybpod/raw/8044a7903c0418a8b2b8579632a64125eaad6788/environment-macOSx.yml>`_ ) and create a virtual environment with it by executing the following commands in the "Anaconda Prompt".
 
@@ -26,16 +65,6 @@ Installing
   Windows
     * On windows if you install Anaconda/Miniconda for all the users, you should make sure you run the "Anaconda Prompt" as administrator.  
     * To avoid issues, make sure you install Anaconda/Miniconda only for your user.
-  Linux
-    * Make sure your user has permissions to access the serial ports.
-    * Execute the next command:
-
-      .. code::
-
-        sudo usermod -a -G dialout [your username]
-
-    * Restart the computer.
-
 
 3. Activate the environment you just created.
 
@@ -48,7 +77,8 @@ Installing
 .. code::
 
   git clone https://bitbucket.org/fchampalimaud/pybpod.git
-
+  git submodule update --init
+  
 5. Access the created repository folder.
 
 .. code::

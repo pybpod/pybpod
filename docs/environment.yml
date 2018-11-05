@@ -1,0 +1,15 @@
+name: pybpod-environment
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - pip=18.0
+  - pip:
+    - pip==18.0
+    - sphinx
+    - sphinx-autobuild
+    - sphinx-rtd-theme
+    - pyqt5
+    - pyforms-gui
+    - pybpod
