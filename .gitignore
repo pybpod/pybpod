@@ -17,3 +17,7 @@ plugins/water-calibration-plugin/
 base/pybpod/pybpod\.egg-info/
 
 base/pybpod/dist/
+
+\.idea/
+
+\.vscode/
