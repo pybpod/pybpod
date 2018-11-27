@@ -46,3 +46,6 @@
 [submodule "pyforms-gui"]
 	path = libraries/pyforms-gui
 	url = https://github.com/UmSenhorQualquer/pyforms-gui.git
+[submodule "plugins/pybpod-soundcard-module"]
+	path = plugins/pybpod-soundcard-module
+	url = https://bitbucket.org/fchampalimaud/pybpod-soundcard-module.git
