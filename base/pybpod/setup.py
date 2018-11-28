@@ -31,6 +31,7 @@ setup(
         'pybpod-gui-plugin-trial-timeline',
         'pybpod-gui-plugin-waveplayer',
         'pybpod-gui-plugin-rotaryencoder',
+        'pybpod-gui-plugin-soundcard',
     ],
     entry_points={
         'console_scripts': [

@@ -26,6 +26,7 @@ SUBMODULES_FOLDERS = [
     'plugins/pybpod-gui-plugin-trial-timeline',
     'plugins/pybpod-gui-plugin-waveplayer',
     'plugins/pybpod-rotary-encoder-module',
+    'plugins/pybpod-soundcard-module',
 ]
 
 DEFAULT_PLUGINS = [
