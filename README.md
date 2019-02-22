@@ -59,3 +59,6 @@ activate pybpod-environment
 ```
 python update.py
 ```
+
+#### Acknowledgments ####
+PyVmMonitor is being used to support the development of this open source software. For more information please see [PyVmMonitor's web site](http://pyvmmonitor.com)
