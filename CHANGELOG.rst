@@ -2,7 +2,7 @@
 Changelog
 =========
 
-v1.7.1 (2019/05/03)
+v1.7.2 (2019/05/03)
 -------------------
 - Python base version changed to v3.6.6
 - Conda environment files are now more coherence between Windows and Linux
