@@ -8,7 +8,7 @@ with open(os.path.join('README.md'), 'r') as fd:
 
 setup(
     name='pybpod',
-    version="1.6.0",
+    version="1.6.1",
     description="Pybpod is a behavioral experiments control system written in Python for Bpod",
     author=['Ricardo Ribeiro', 'Luís Teixeira'],
     author_email='ricardo.ribeiro@research.fchampalimaud.org, ricardojvr@gmail.com, micboucinha@gmail.com',
@@ -31,6 +31,8 @@ setup(
         'pybpod-gui-plugin-trial-timeline',
         'pybpod-gui-plugin-waveplayer',
         'pybpod-gui-plugin-rotaryencoder',
+        'pybpod-gui-plugin-soundcard',
+        'pybpod-gui-plugin-emulator'
     ],
     entry_points={
         'console_scripts': [

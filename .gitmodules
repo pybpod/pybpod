@@ -1,48 +1,51 @@
-[submodule "pybpod-api"]
+[submodule "base|pybpod-api"]
 	path = base/pybpod-api
 	url = https://bitbucket.org/fchampalimaud/pybpod-api.git
-[submodule "pybpod-gui-api"]
+[submodule "base|pybpod-gui-api"]
 	path = base/pybpod-gui-api
 	url = https://bitbucket.org/fchampalimaud/pybpod-gui-api.git
-[submodule "pybpod-gui-plugin"]
+[submodule "base|pybpod-gui-plugin"]
 	path = base/pybpod-gui-plugin
 	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin.git
-[submodule "pybpod-gui-plugin-session-history"]
-	path = plugins/pybpod-gui-plugin-session-history
-	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-session-history.git
-[submodule "pybpod-gui-plugin-timeline"]
-	path = plugins/pybpod-gui-plugin-timeline
-	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-timeline.git
-[submodule "pybpod-rotary-encoder-module"]
-	path = plugins/pybpod-rotary-encoder-module
-	url = https://bitbucket.org/fchampalimaud/pybpod-rotary-encoder-module.git
-[submodule "pyforms-generic-editor"]
+[submodule "libs|pyforms-generic-editor"]
 	path = libraries/pyforms-generic-editor
 	url = https://bitbucket.org/fchampalimaud/pyforms-generic-editor.git
-[submodule "logging-bootstrap"]
+[submodule "libs|logging-bootstrap"]
 	path = libraries/logging-bootstrap
 	url = https://bitbucket.org/fchampalimaud/logging-bootstrap.git
-[submodule "safe-collaborative-architecture"]
+[submodule "libs|safe-collaborative-architecture"]
 	path = libraries/safe-collaborative-architecture
 	url = https://bitbucket.org/fchampalimaud/safe-collaborative-architecture.git
-[submodule "pge-plugin-terminal"]
-	path = plugins/pge-plugin-terminal
-	url = https://bitbucket.org/fchampalimaud/pge-plugin-terminal.git
-[submodule "pybpod-gui-plugin-emulator"]
-	path = plugins/pybpod-gui-plugin-emulator
-	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-emulator.git
-[submodule "pybpod-gui-plugin-trial-timeline"]
-	path = plugins/pybpod-gui-plugin-trial-timeline
-	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-trial-timeline
-[submodule "pybpod-gui-plugin-stmdiagram"]
-	path = plugins/pybpod-gui-plugin-stmdiagram
-	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-stmdiagram.git
-[submodule "pybpod-alyx-module"]
-	path = plugins/pybpod-alyx-module
-	url = https://bitbucket.org/fchampalimaud/pybpod-alyx-module/
-[submodule "pybpod-gui-plugin-waveplayer"]
-	path = plugins/pybpod-gui-plugin-waveplayer
-	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-waveplayer
-[submodule "pyforms-gui"]
+[submodule "libs|pyforms-gui"]
 	path = libraries/pyforms-gui
 	url = https://github.com/UmSenhorQualquer/pyforms-gui.git
+[submodule "plugins|pybpod-gui-session-history"]
+	path = plugins/pybpod-gui-plugin-session-history
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-session-history.git
+[submodule "plugins|pybpod-gui-timeline"]
+	path = plugins/pybpod-gui-plugin-timeline
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-timeline.git
+[submodule "plugins|pybpod-rotary-encoder-module"]
+	path = plugins/pybpod-rotary-encoder-module
+	url = https://bitbucket.org/fchampalimaud/pybpod-rotary-encoder-module.git
+[submodule "plugins|pge-terminal"]
+	path = plugins/pge-plugin-terminal
+	url = https://bitbucket.org/fchampalimaud/pge-plugin-terminal.git
+[submodule "plugins|pybpod-gui-emulator"]
+	path = plugins/pybpod-gui-plugin-emulator
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-emulator.git
+[submodule "plugins|pybpod-gui-trial-timeline"]
+	path = plugins/pybpod-gui-plugin-trial-timeline
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-trial-timeline
+[submodule "plugins|pybpod-gui-stmdiagram"]
+	path = plugins/pybpod-gui-plugin-stmdiagram
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-stmdiagram.git
+[submodule "plugins|pybpod-alyx-module"]
+	path = plugins/pybpod-alyx-module
+	url = https://bitbucket.org/fchampalimaud/pybpod-alyx-module/
+[submodule "plugins|pybpod-gui-waveplayer"]
+	path = plugins/pybpod-gui-plugin-waveplayer
+	url = https://bitbucket.org/fchampalimaud/pybpod-gui-plugin-waveplayer
+[submodule "plugins|pybpod-soundcard-module"]
+	path = plugins/pybpod-soundcard-module
+	url = https://bitbucket.org/fchampalimaud/pybpod-soundcard-module.git

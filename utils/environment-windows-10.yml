@@ -1,50 +1,51 @@
 name: pybpod-environment
 channels:
-- anaconda
-- conda-forge
-- defaults
+  - conda-forge
+  - anaconda
+  - defaults
 dependencies:
-- git=2.15.0=heaa8ca2_0
-- backports=1.0=py35_1
-- backports.functools_lru_cache=1.4=py35_1
-- freetype=2.7=vc14_2
-- icu=58.2=vc14_0
-- jpeg=9b=vc14_2
-- libpng=1.6.28=vc14_2
-- matplotlib=2.1.0=py35_1
-- openssl=1.0.2l=vc14_0
-- qscintilla2=2.9.3=py35_vc14_2
-- qt=5.6.2=vc14_1
-- sqlite=3.19.3=vc14_1
-- zlib=1.2.11=vc14_0
-- ca-certificates=2017.08.26=h94faf87_0
-- certifi=2017.7.27.1=py35hbab57cd_0
-- cycler=0.10.0=py35hcc71164_0
-- icc_rt=2017.0.4=h97af966_0
-- intel-openmp=2018.0.0=hcd89f80_7
-- mkl=2018.0.0=h36b65af_4
-- numpy=1.13.3=py35hb7e80fb_0
-- pip=9.0.1=py35h691316f_4
-- pyparsing=2.2.0=py35hcabcaab_1
-- pyqt=5.6.0=py35hd46907b_5
-- pyserial=3.4=py35he0af20a_0
-- python=3.5.4=h1357f44_23
-- python-dateutil=2.6.1=py35h6b299a3_1
-- pytz=2017.2=py35h3d6be01_1
-- setuptools=36.5.0=py35h21a22e4_0
-- sip=4.18.1=py35h01cbaa7_2
-- six=1.11.0=py35hc1da2df_1
-- tornado=4.5.2=py35h03246f3_0
-- vc=14=h2379b0c_2
-- vs2015_runtime=14.0.25123=hd4c4e62_2
-- wheel=0.29.0=py35hdbcb6e6_1
-- wincertstore=0.2=py35hfebbdb8_0
-- pip:
-  - anyqt==0.0.8
-  - backports.functools-lru-cache==1.4
-  - send2trash==1.4.2
-  - pandas==0.22.0
-  - scipy
-  - confapp==1.0.0
+  - ca-certificates=2017.08.26=h94faf87_0
+  - certifi=2018.10.15=py36_0
+  - git=2.15.0=heaa8ca2_0
+  - hdf5=1.10.1=vc14hb361328_0
+  - icc_rt=2017.0.4=h97af966_0
+  - intel-openmp=2018.0.0=hcd89f80_7
+  - mkl=2018.0.0=h36b65af_4
+  - openssl=1.0.2l=vc14_0
+  - pandas=0.23.4=py36h830ac7b_0
+  - scipy=1.0.0=py36h1260518_0
+  - tk=8.5.18=vc14_0
+  - vc=14=h2379b0c_2
+  - vs2015_runtime=14.0.25123=hd4c4e62_2
+  - zlib=1.2.11=vc14_0
+  - backports.functools_lru_cache=1.5=py_1
+  - icu=58.2=vc14_0
+  - jpeg=9b=vc14_2
+  - libwebp=0.5.2=7
+  - opencv=3.4.1=py36_200
+  - qscintilla2=2.9.3=py36h91d67ea_1003
+  - qt=5.6.2=vc14_1
+  - sqlite=3.19.3=vc14_1
+  - backports=1.0=py36_1
+  - blas=1.0=mkl
+  - cycler=0.10.0=py36h009560c_0
+  - libopencv=3.4.2=h20b85fd_0
+  - libpng=1.6.34=h79bbb47_0
+  - libtiff=4.0.9=h36446d0_2
+  - matplotlib=2.0.2=np113py36_0
+  - numpy=1.13.3=py36hb69e940_3
+  - pip=18.1=py36_0
+  - pyparsing=2.3.0=py36_0
+  - pyqt=5.6.0=py36ha878b3d_6
+  - pyserial=3.4=py36_0
+  - python=3.6.6=hea74fb7_0
+  - python-dateutil=2.7.5=py36_0
+  - pytz=2018.7=py36_0
+  - setuptools=40.6.3=py36_0
+  - sip=4.18.1=py36h6538335_2
+  - six=1.12.0=py36_0
+  - tornado=5.1.1=py36hfa6e2cd_0
+  - wheel=0.32.3=py36_0
+  - wincertstore=0.2=py36h7fe50ca_0
 prefix: pybpod-environment
 
