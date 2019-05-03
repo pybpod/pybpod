@@ -91,6 +91,7 @@ If you have any questions or want to report a problem with this library please f
    :caption: About
 
    about/about
+   about/changelog
 
 .. toctree::
    :hidden:
