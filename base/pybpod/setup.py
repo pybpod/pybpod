@@ -8,7 +8,7 @@ with open(os.path.join('README.md'), 'r') as fd:
 
 setup(
     name='pybpod',
-    version="1.6.1",
+    version="1.7",
     description="Pybpod is a behavioral experiments control system written in Python for Bpod",
     author=['Ricardo Ribeiro', 'Luís Teixeira'],
     author_email='ricardo.ribeiro@research.fchampalimaud.org, ricardojvr@gmail.com, micboucinha@gmail.com',
@@ -24,7 +24,6 @@ setup(
         'pybpod-gui-api',
         'pybpod-gui-plugin',
         'pge-plugin-terminal',
-        'pybpod-gui-plugin-alyx',
         'pybpod-gui-plugin-session-history',
         'pybpod-gui-plugin-stmdiagram',
         'pybpod-gui-plugin-timeline',
