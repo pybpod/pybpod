@@ -18,7 +18,7 @@ We typical work on computer vision / tracking, behavioral experiments, image reg
 
 Bpod project
 ============
-**pybpod-gui-plugin** is a python port of the `Bpod Matlab project <https://github.com/sanworks/Bpod>`_.
+PyBpod is a python port of the `Bpod Matlab project <https://github.com/sanworks/Bpod>`_.
 
 All examples and Bpod's state machine and communication logic were based on the original version made available by `Josh Sanders (Sanworks) <https://github.com/sanworks>`_.
 
@@ -34,13 +34,8 @@ The current and past members of the **pybpod-api** team.
 * `@cajomferro <https://github.com/cajomferro/>`_ Carlos Mão de Ferro
 * `@JBauto <https://github.com/JBauto>`_ João Baúto
 * `@UmSenhorQualquer <https://github.com/UmSenhorQualquer/>`_ Ricardo Ribeiro
+* `@MicBoucinha <https://github.com/MicBoucinha/>`_ Luís Teixeira
 
 Questions?
 ==========
 If you have any questions or want to report a problem with this library please fill a issue `here <https://bitbucket.org/fchampalimaud/pybpod-api/issues>`_.
-
-
-.. Changes log
-.. -----------
-
-.. TODO

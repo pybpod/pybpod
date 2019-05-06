@@ -48,10 +48,12 @@ Questions?
 ==========
 If you have any questions or want to report a problem with this library please fill in an issue `here <https://bitbucket.org/fchampalimaud/pybpod-api/issues>`_.
 
+Contents
+========
+
 .. high level toc tree
 
 .. toctree::
-   :hidden:
    :maxdepth: 2
    :includehidden:
    :caption: Getting started
@@ -63,7 +65,6 @@ If you have any questions or want to report a problem with this library please f
    getting-started/plugins
 
 .. toctree::
-   :hidden:
    :maxdepth: 2
    :includehidden:
    :caption: Developers
@@ -75,17 +76,13 @@ If you have any questions or want to report a problem with this library please f
    developers/contributing
 
 .. toctree::
-   :hidden:
    :maxdepth: 4
    :includehidden:
    :caption: API reference
 
-   PyBpod API <https://pybpod-gui.readthedocs.io>
+   PyBpod API <https://pybpod-api.readthedocs.io/>
    
-
-
 .. toctree::
-   :hidden:
    :maxdepth: 4
    :includehidden:
    :caption: About
