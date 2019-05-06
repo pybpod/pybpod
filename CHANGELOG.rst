@@ -5,7 +5,7 @@ Changelog
 v1.7.2 (2019/05/03)
 -------------------
 - Python base version changed to v3.6.6
-- Conda environment files are now more coherence between Windows and Linux
+- Conda environment files are now more coherent between Windows and Linux
 - pybpod-api (updated to v1.6.3)
     - Data from interrupted trials are ignored
     - Added new trigger_input message to manually override inputs and trigger events
