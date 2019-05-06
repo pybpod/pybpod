@@ -12,8 +12,8 @@ GUI explained
     **Quick rationale**
 
     There are a lot of things going on under the hood when you run the **PyBpod GUI**.
-    We will try to resume the basic concepts here but keep in mind that it is a lot of information so don't get frustrated if you don't get it the first time.
-    There were a lot of man-hours involved in this project and we strongly believe that dividing code in modules and libraries, though seems more complicated at first sight, greatly improves code reusability and low-coupling.
+    We will try to resume the basic concepts here but keep in mind that it is a lot of information so don't get frustrated if you don't get it at first.
+    There were a lot of man-hours involved in this project and we strongly believe that dividing code in modules and libraries, though it seems more complicated at first, greatly improves code reusability and low-coupling.
 
 ==============================
 Libraries that make up the GUI
@@ -51,11 +51,11 @@ PyBpod API
 http://pybpod-api.readthedocs.io/en/latest/
 
 
-Pysettings
+Confapp
 ----------
 Python library to provide settings files for modular applications.
 
-https://github.com/UmSenhorQualquer/pyforms
+https://github.com/UmSenhorQualquer/confapp
 
 
 Pybranch
