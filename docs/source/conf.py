@@ -29,9 +29,9 @@ copyright = '2018, Ricardo Ribeiro'
 author = 'Ricardo Ribeiro'
 
 # The short X.Y version
-version = '1.0'
+version = '1.7'
 # The full version, including alpha/beta/rc tags.
-release = '1.0'
+release = '1.7.2'
 
 
 # -- General configuration ---------------------------------------------------
@@ -151,7 +151,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'PyBpod.tex', 'PyBpod Documentation',
-     'Ricardo Ribeiro', 'manual'),
+     [author], 'manual'),
 ]
 
 
