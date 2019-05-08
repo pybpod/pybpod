@@ -2,6 +2,10 @@
 Changelog
 =========
 
+v1.7.3 (2019/05/08)
+-------------------
+- Fixed problem with wrong pybpod-alyx-module version (now it is v1.1)
+
 v1.7.2 (2019/05/03)
 -------------------
 - Python base version changed to v3.6.6
