@@ -14,9 +14,9 @@ Welcome to PyBpod's documentation!
 What is PyBpod?
 ===================
 
-.. image:: /_images/bpod_gui_sample.png
+.. image:: /_static/pybpod_main_window.png
 
-**PyBpod** is a GUI application that enables interaction with the latest `Bpod device <https://sanworks.io/shop/viewproduct?productID=1011>`_ version.
+**PyBpod** is a GUI application that enables interaction with the latest `Bpod devices <https://sanworks.io/shop/products.php?productFamily=bpod>`_ version.
 
 This project is maintained by a team of SW developers at the `Champalimaud Foundation <http://research.fchampalimaud.org>`_. Please find more information on section :ref:`Project Info <project-info-label>`.
 
