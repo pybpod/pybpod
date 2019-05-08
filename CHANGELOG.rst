@@ -2,6 +2,10 @@
 Changelog
 =========
 
+v1.7.4 (2019/05/08)
+-------------------
+- The pybpodgui_plugin_session_history is now pointing to the master branch as it should (v1.4.1)
+
 v1.7.3 (2019/05/08)
 -------------------
 - Fixed problem with wrong pybpod-alyx-module version (now it is v1.1)
