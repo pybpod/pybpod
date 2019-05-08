@@ -60,7 +60,7 @@ ________________
   or 
   conda env create -f utils/environment-macOSx.yml
 
-.. note::
+.. warning::
 
   Windows
     * On windows if you install Anaconda/Miniconda for all the users, you should make sure you run the "Anaconda Prompt" as administrator.  
