@@ -1,5 +1,6 @@
 import os
 import xmlrpc.client
+import re
 from subprocess import Popen, PIPE
 import shutil
 
@@ -17,27 +18,10 @@ CURRENT_DIRECTORY = os.getcwd()
 
 Popen(['pip','install','--upgrade','setuptools','wheel','twine'])
 
-def version_compare(a, b):
-
-	a = a.split('.')
-	b = b.split('.')
-
-	for a_value, b_value in zip(a, b):
-		a_value = int(a_value)
-		b_value = int(b_value)
-		
-		if a_value>b_value:
-			return -1
-		elif a_value<b_value:
-			return 1
-
-	if len(a)>len(b):
-		return -1
-	elif len(a)<len(b):
-		return 1
-
-	return 0
-
+def version_compare(version1, version2):
+    def normalize(v):
+        return [int(x) for x in re.sub(r'(\.0+)*$','', v).split(".")]
+    return cmp(normalize(version1), normalize(version2))
 
 
 for search_dir in DIRECTORIES_TO_SEARCH_FORM:
