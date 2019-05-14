@@ -1,77 +1,58 @@
 import os
+import shutil
 import xmlrpc.client
 from subprocess import Popen, PIPE
-import shutil
+from packaging import version as v
+
+
+def version_compare(loc_version, rmt_version):
+    return v.parse(loc_version) > v.parse(rmt_version)
 
 
 pypi = xmlrpc.client.ServerProxy('https://pypi.org')
 
 DIRECTORIES_TO_SEARCH_FORM = [
-	os.path.join('libraries'),
-	os.path.join('base'),
-	os.path.join('plugins'),
+    os.path.join('libraries'),
+    os.path.join('base'),
+    os.path.join('plugins'),
 ]
 
 CURRENT_DIRECTORY = os.getcwd()
 
-
-Popen(['pip','install','--upgrade','setuptools','wheel','twine'])
-
-def version_compare(a, b):
-
-	a = a.split('.')
-	b = b.split('.')
-
-	for a_value, b_value in zip(a, b):
-		a_value = int(a_value)
-		b_value = int(b_value)
-		
-		if a_value>b_value:
-			return -1
-		elif a_value<b_value:
-			return 1
-
-	if len(a)>len(b):
-		return -1
-	elif len(a)<len(b):
-		return 1
-
-	return 0
-
-
+Popen(['pip', 'install', '--upgrade', 'setuptools', 'wheel', 'twine'])
 
 for search_dir in DIRECTORIES_TO_SEARCH_FORM:
-	for dir_name in os.listdir(search_dir):
-		dir_path = os.path.abspath(os.path.join(search_dir, dir_name))
-		if not os.path.isdir(dir_path): continue
+    for dir_name in os.listdir(search_dir):
+        dir_path = os.path.abspath(os.path.join(search_dir, dir_name))
+        if not os.path.isdir(dir_path):
+            continue
 
-		setup_filepath = os.path.join(dir_path, 'setup.py')
-		if not os.path.isfile(setup_filepath): continue
+        setup_filepath = os.path.join(dir_path, 'setup.py')
+        if not os.path.isfile(setup_filepath):
+            continue
 
-		os.chdir(dir_path)
+        os.chdir(dir_path)
 
-		version = Popen(["python", setup_filepath, '--version'], stdout=PIPE).stdout.read()
-		version = version.strip().decode()
-		
-		package_name = Popen(["python", setup_filepath, '--name'], stdout=PIPE).stdout.read()
-		package_name = package_name.strip().decode().replace(' ', '-')
+        version = Popen(["python", setup_filepath, '--version'], stdout=PIPE).stdout.read()
+        version = version.strip().decode()
 
-		remote_version = pypi.package_releases(package_name)
-		
-		print( dir_name, version, remote_version )
+        package_name = Popen(["python", setup_filepath, '--name'], stdout=PIPE).stdout.read()
+        package_name = package_name.strip().decode().replace(' ', '-')
 
-		
-		if len(remote_version)==0 or version_compare(version, remote_version[0])<0:
-			print('----- UPLOADING PYPI -----', package_name)
+        remote_version = pypi.package_releases(package_name)
 
-			if os.path.isdir('./dist'): shutil.rmtree('./dist')
-			Popen(['python', 'setup.py', 'sdist', 'bdist_wheel'], stdout=PIPE).communicate()
-			Popen(['twine', 'upload', os.path.join('dist','*')]).communicate()
+        print(dir_name, version, remote_version)
 
-		
-		os.chdir(CURRENT_DIRECTORY)
+        if len(remote_version) == 0 or version_compare(version, remote_version[0]) is True:
+            print('----- UPLOADING TO PYPI -----', package_name)
 
+            if os.path.isdir('./dist'):
+                shutil.rmtree('./dist')
 
+            Popen(['python', 'setup.py', 'sdist', 'bdist_wheel'], stdout=PIPE).communicate()
+            Popen(['twine', 'upload', os.path.join('dist', '*')]).communicate()
+
+        os.chdir(CURRENT_DIRECTORY)
 
 """
 

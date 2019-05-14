@@ -2,6 +2,23 @@
 Changelog
 =========
 
+v1.7.5 (2019/05/15)
+-------------------
+- pybpod-gui-plugin (updated to v1.6.2)
+    - Fixed png that was creating a warning on PyBpod initialization
+    - Now it points correctly to the master branch
+- pyforms-gui (updated to v4.901.2)
+    - Version update so that PyPI considers a new version and the updates mentioned in v1.7.2 release are applied.
+- pybpod-alyx-module (updated to v1.1.1)
+    - Removed unnecessary requests package requirement
+- pybpod-gui-plugin-emulator (v0.1.3)
+    - Fixed override messages not being sent properly on Windows
+    - Fix for pause not working
+- pybpod-rotaryencoder-module (v0.1.1)
+    - Fix for version override which would present always as version 0
+- pybpod-soundcard-module (v0.1.5)
+    - Added bumpversion support to this module
+
 v1.7.4 (2019/05/08)
 -------------------
 - The pybpodgui_plugin_session_history is now pointing to the master branch as it should (v1.4.1)
@@ -36,5 +53,5 @@ v1.7.2 (2019/05/03)
     - Subjects that are dead, are now removed automatically from the list
 - New modules and plugins
     - pybpod-soundcard-module (v0.1.4). More details on this module in: https://pybpod-soundcard-module.readthedocs.io/
-    - pybpod-gui-plugin-emulator (v0.1) More details on this module in: https://pybpod-gui-plugin-emulator.readthedocs.io/en/v0.1.0/
+    - pybpod-gui-plugin-emulator (v0.1). More details on this module in: https://pybpod-gui-plugin-emulator.readthedocs.io/en/v0.1.0/
 

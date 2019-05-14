@@ -9,17 +9,29 @@ Basic usage
 Projects
 ========
 
-When you open the Bpod GUI for the first time, you can create a new project or load a previous project from your filesystem.
+When you open PyBpod for the first time, you can create a new project or load a previous project from your filesystem.
 
-.. image:: /_images/basic-usage/file_menu.png
-    :scale: 100 %
+.. image:: /_static/new_project_menu.png
+    :align: center
 
-With PyBpod GUI you can easily organize your work. Projects allow you to aggregate several experiments in one place. Moreover, you can have several projects open at the same time to compare data.
-Each project has a set of experiments, boxes and protocols.
+With PyBpod you can easily organize your work. Projects allow you to aggregate several experiments in one place.
 
-.. image:: /_images/basic-usage/projects.png
-    :scale: 70 %
+.. note::
 
+    You can open several projects at the same time to compare data.
+
+Each project has a set of experiments, subjects, boards, protocols and users as it is possible to see from the example
+in the next figure.
+
+.. image:: /_static/project_structure.png
+    :scale: 85%
+    :align: center
+
+An experiment can have one or more Setups. Each Setup mostly defines an association between a Board and a Protocol. It
+is also possible to associate one or more subjects as well as variable definitions for that particular Setup.
+
+When running a particular Setup, the Session data will appear under it in the project tree as well as under the subjects
+that were part of that Session.
 
 ============
 Bpod boards
@@ -27,14 +39,14 @@ Bpod boards
 
 PyBpod GUI supports multiple Bpod boards to be run in parallel. Just add a new board, select serial port, run your experiment and open the console window.
 
-.. image:: /_images/basic-usage/boards.png
-    :scale: 70 %
-
+.. image:: /_static/board_sample.png
+    :scale: 85%
+    :align: center
 
 The console window allows you to see real time output from the Bpod.
 
-.. image:: /_images/basic-usage/board-console.png
-    :scale: 70 %
+.. image:: /_static/board_console_sample.png
+    :align: center
 
 .. note::
 
@@ -44,7 +56,9 @@ The console window allows you to see real time output from the Bpod.
 Subjects
 =========
 
-The subjects allow you to manage the animals being used in your experiments. By keeping the list of animals updated you will be able to better control the usage of them, and later you will be able to use this information to do statistics about the different animals reponses to your experiment.
+The subjects allow you to manage the animals for your experiments. By keeping the list of animals updated you will have
+better control of your experiments. PyBpod allows you to know in which Sessions each subject participated and you can
+see details for each Session within PyBpod.
 
 .. image:: /_images/basic-usage/subjects.png
     :scale: 70 %
