@@ -28,10 +28,7 @@ project = 'PyBpod'
 copyright = '2018, Ricardo Ribeiro'
 author = 'Ricardo Ribeiro'
 
-# The short X.Y version
-version = '1.7'
-# The full version, including alpha/beta/rc tags.
-release = '1.7.2'
+version = release = '1.7.5'
 
 
 # -- General configuration ---------------------------------------------------

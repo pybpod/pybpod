@@ -8,7 +8,7 @@ with open(os.path.join('README.md'), 'r') as fd:
 
 setup(
     name='pybpod',
-    version="1.7.4",
+    version="1.7.5",
     description="Pybpod is a behavioral experiments control system written in Python for Bpod",
     author=['Ricardo Ribeiro', 'Luís Teixeira'],
     author_email='ricardo.ribeiro@research.fchampalimaud.org, ricardojvr@gmail.com, micboucinha@gmail.com',
