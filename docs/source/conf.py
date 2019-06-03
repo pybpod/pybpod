@@ -28,7 +28,7 @@ project = 'PyBpod'
 copyright = '2018, Ricardo Ribeiro'
 author = 'Ricardo Ribeiro'
 
-version = release = '1.7.6'
+version = release = '1.7.7'
 
 
 # -- General configuration ---------------------------------------------------
