@@ -1,9 +1,13 @@
 
 Changelog
 =========
+v1.7.8 (2019/06/03)
+-------------------
+- Fixed a problem with the setup requirements
+
 v1.7.7 (2019/06/03)
 -------------------
-- Fixed problem with pybpod-gui-plugin-waveplayer.
+- Fixed a problem with pybpod-gui-plugin-waveplayer.
 
 v1.7.6 (2019/06/03)
 -------------------
