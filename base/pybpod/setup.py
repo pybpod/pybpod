@@ -8,7 +8,7 @@ with open(os.path.join('README.md'), 'r') as fd:
 
 setup(
     name='pybpod',
-    version="1.7.4",
+    version="1.7.8",
     description="Pybpod is a behavioral experiments control system written in Python for Bpod",
     author=['Ricardo Ribeiro', 'Luís Teixeira'],
     author_email='ricardo.ribeiro@research.fchampalimaud.org, ricardojvr@gmail.com, micboucinha@gmail.com',
@@ -19,19 +19,20 @@ setup(
     long_description = long_description,
     long_description_content_type = 'text/markdown',
     install_requires = [
-        'pyforms-gui',
-        'pyforms_generic_editor',
-        'pybpod-gui-api',
-        'pybpod-gui-plugin',
-        'pge-plugin-terminal',
-        'pybpod-gui-plugin-session-history',
-        'pybpod-gui-plugin-stmdiagram',
-        'pybpod-gui-plugin-timeline',
-        'pybpod-gui-plugin-trial-timeline',
-        'pybpod-gui-plugin-waveplayer',
-        'pybpod-gui-plugin-rotaryencoder',
-        'pybpod-gui-plugin-soundcard',
-        'pybpod-gui-plugin-emulator'
+        'pyforms-gui==4.901.2',
+        'pyforms_generic_editor==1.5.1',
+        'pybpod-api==1.6.4',
+        'pybpod-gui-api==1.2.2',
+        'pybpod-gui-plugin==1.6.2',
+        'pge-plugin-terminal==0.1',
+        'pybpod-gui-plugin-session-history==1.4.1',
+        'pybpod-gui-plugin-stmdiagram==1.0.0',
+        'pybpod-gui-plugin-timeline==1.0.1',
+        'pybpod-gui-plugin-trial-timeline==1.0.0',
+        'pybpod-gui-plugin-waveplayer==1.0',
+        'pybpod-gui-plugin-rotaryencoder==0.1.1',
+        'pybpod-gui-plugin-soundcard==0.1.5',
+        'pybpod-gui-plugin-emulator==0.1.3'
     ],
     entry_points={
         'console_scripts': [

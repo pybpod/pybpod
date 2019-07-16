@@ -1,6 +1,21 @@
 
 Changelog
 =========
+v1.7.8 (2019/06/03)
+-------------------
+- Fixed a problem with the setup requirements
+
+v1.7.7 (2019/06/03)
+-------------------
+- Fixed a problem with pybpod-gui-plugin-waveplayer.
+
+v1.7.6 (2019/06/03)
+-------------------
+- Requirements for PyBpod now point to specific package versions to ease upgrades
+- pybpod-api (updated to v1.6.4)
+    - Fixed problem with bad indexing when accessing modules in _bpodcom_module_write
+- pybpod-gui-plugin-waveplayer (v1.0)
+    - Corrected version number in the package and PyPi
 
 v1.7.5 (2019/05/15)
 -------------------
