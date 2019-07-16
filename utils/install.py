@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import pip, os
+import os
 from subprocess import call
 
 SUBMODULES_FOLDERS = [
@@ -15,11 +15,11 @@ SUBMODULES_FOLDERS = [
     'base/pybpod-api',
     'base/pybpod-gui-api',
     'base/pybpod-gui-plugin',
-    
+
     # PLUGINS
     'plugins/pge-plugin-terminal',
     'plugins/pybpod-alyx-module',
-    #'plugins/pybpod-gui-plugin-emulator',
+    'plugins/pybpod-gui-plugin-emulator',
     'plugins/pybpod-gui-plugin-session-history',
     'plugins/pybpod-gui-plugin-stmdiagram',
     'plugins/pybpod-gui-plugin-timeline',
@@ -38,7 +38,8 @@ DEFAULT_PLUGINS = [
 
 def install():
     for submodule in SUBMODULES_FOLDERS:
-        call(['pip', 'install', '-e', os.path.join(submodule,'.')])
+        call(['pip', 'install', '-e', os.path.join(submodule, '.')])
+
 
 def conf_default_settings():
     if not os.path.exists('user_settings.py'):
@@ -48,6 +49,6 @@ def conf_default_settings():
         f.close()
 
 
-if __name__=='__main__': 
+if __name__ == '__main__':
     install()
     conf_default_settings()
