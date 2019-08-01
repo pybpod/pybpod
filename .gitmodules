@@ -41,7 +41,7 @@
 	path = plugins/pybpod-gui-plugin-stmdiagram
 	url = https://github.com/pybpod/pybpod-gui-plugin-stmdiagram.git
 [submodule "plugins - pybpod-gui-plugin-alyx"]
-	path = plugins/pybpod-plugin-gui-alyx
+	path = plugins/pybpod-gui-plugin-alyx
 	url = https://github.com/pybpod/pybpod-gui-plugin-alyx
 [submodule "plugins - pybpod-gui-plugin-waveplayer"]
 	path = plugins/pybpod-gui-plugin-waveplayer
