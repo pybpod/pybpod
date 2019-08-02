@@ -25,9 +25,6 @@
 [submodule "plugins - pybpod-gui-timeline"]
 	path = plugins/pybpod-gui-plugin-timeline
 	url = https://github.com/pybpod/pybpod-gui-plugin-timeline.git
-[submodule "plugins - pybpod-gui-plugin-rotaryencoder"]
-	path = plugins/pybpod-gui-plugin-rotaryencoder
-	url = https://github.com/pybpod/pybpod-gui-plugin-rotaryencoder.git
 [submodule "plugins - pge-terminal"]
 	path = plugins/pge-plugin-terminal
 	url = https://bitbucket.org/fchampalimaud/pge-plugin-terminal.git
