@@ -19,10 +19,10 @@
 [submodule "libs - pyforms-gui"]
 	path = libraries/pyforms-gui
 	url = https://github.com/UmSenhorQualquer/pyforms-gui.git
-[submodule "plugins - pybpod-gui-session-history"]
+[submodule "plugins - pybpod-gui-plugin-session-history"]
 	path = plugins/pybpod-gui-plugin-session-history
 	url = https://github.com/pybpod/pybpod-gui-plugin-session-history.git
-[submodule "plugins - pybpod-gui-timeline"]
+[submodule "plugins - pybpod-gui-plugin-timeline"]
 	path = plugins/pybpod-gui-plugin-timeline
 	url = https://github.com/pybpod/pybpod-gui-plugin-timeline.git
 [submodule "plugins - pge-terminal"]
@@ -31,10 +31,10 @@
 [submodule "plugins - pybpod-gui-plugin-emulator"]
 	path = plugins/pybpod-gui-plugin-emulator
 	url = https://github.com/pybpod/pybpod-gui-plugin-emulator.git
-[submodule "plugins - pybpod-gui-trial-timeline"]
+[submodule "plugins - pybpod-gui-plugin-trial-timeline"]
 	path = plugins/pybpod-gui-plugin-trial-timeline
 	url = https://github.com/pybpod/pybpod-gui-plugin-trial-timeline
-[submodule "plugins - pybpod-gui-stmdiagram"]
+[submodule "plugins - pybpod-gui-plugin-stmdiagram"]
 	path = plugins/pybpod-gui-plugin-stmdiagram
 	url = https://github.com/pybpod/pybpod-gui-plugin-stmdiagram.git
 [submodule "plugins - pybpod-gui-plugin-alyx"]
