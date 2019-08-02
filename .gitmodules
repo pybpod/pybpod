@@ -46,3 +46,6 @@
 [submodule "plugins - pybpod-gui-plugin-soundcard"]
 	path = plugins/pybpod-gui-plugin-soundcard
 	url = https://github.com/pybpod/pybpod-gui-plugin-soundcard.git
+[submodule "plugins - pybpod-gui-plugin-rotaryencoder"]
+	path = plugins/pybpod-gui-plugin-rotaryencoder
+	url = https://github.com/pybpod/pybpod-gui-plugin-rotaryencoder.git
