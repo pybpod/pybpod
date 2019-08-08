@@ -14,6 +14,38 @@ You can use plugins for:
 
 For detailed information on how to develop plugins please see :ref:`Developing PyBpod GUI plugins <developing_plugins-label>`.
 
+=================
+Available Plugins
+=================
+
+PyBpod has several plugins and modules for different purposes.
+The ones developed by our team are:
+
+* Session history (`GitHub <https://github.com/pybpod/pybpod-gui-plugin-session-history>`_)
+* Trial timeline (`GitHub <https://github.com/pybpod/pybpod-gui-plugin-trial-timeline>`_)
+* Wave player (`GitHub <https://github.com/pybpod/pybpod-gui-plugin-waveplayer>`_)
+* Alyx module (`GitHub <https://github.com/pybpod/pybpod-gui-plugin-alyx>`_)
+* Rotary encoder module (`Documentation <https://pybpod-api-rotary-encoder-module.readthedocs.io/>`_, `GitHub <https://github.com/pybpod/pybpod-gui-plugin-rotaryencoder>`_)
+* Harp Sound card module (`Documentation <https://pybpod-soundcard-module.readthedocs.io/>`_, `GitHub <https://github.com/pybpod/pybpod-gui-plugin-soundcard>`_)
+* Emulator module (`Documentation <https://pybpod-gui-plugin-emulator.readthedocs.io/>`_, `GitHub <https://github.com/pybpod/pybpod-gui-plugin-emulator>`_)
+
+More information can be found at the PyBpod's page in GitHub `here <https://github.com/pybpod>`_.
+
+Community made plugins
+----------------------
+
+There are also some plugins developed by the PyBpod's community.
+The following plugins were developed by the *de la Rocha* lab:
+
+* Water calibration (`BitBucket <https://bitbucket.org/delaRochaLab/water-calibration-plugin/>`_)
+* Graphics Trend plugin for 2FC tasks (`BitBucket <https://bitbucket.org/delaRochaLab/trend-2fc-plugin/src/master-3A/>`_)
+* Raster plot visualization of live or recorded sessions (`BitBucket <https://bitbucket.org/delaRochaLab/raster-plugin/>`_)
+* Sound calibration (`BitBucket <https://bitbucket.org/delaRochaLab/sound-calibration-plugin/src/master-3A/>`_)
+
+.. warning::
+    These plugins might not work with the latest PyBpod version. Please check their respective documentation to confirm for which PyBpod version they were developed.
+
+
 ======================
 How to install plugins
 ======================
