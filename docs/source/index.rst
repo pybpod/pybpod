@@ -81,7 +81,8 @@ Contents
    :caption: API reference
 
    PyBpod API <https://pybpod-api.readthedocs.io/>
-   
+   PyBpod GUI API <https://pybpod-gui-api.readthedocs.io/>
+
 .. toctree::
    :maxdepth: 4
    :includehidden:
