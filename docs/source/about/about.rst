@@ -24,7 +24,7 @@ All examples and Bpod's state machine and communication logic were based on the 
 
 License
 =======
-This is Open Source software. We use the `GNU General Public License version 3 <https://www.gnu.org/licenses/gpl.html>`_.
+This is Open Source software with a MIT license.
 
 Maintenance team
 ================
