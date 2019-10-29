@@ -22,3 +22,6 @@ base/pybpod/dist/
 \.idea/
 
 \.vscode/
+
+.mypy_cache
+.pyre
