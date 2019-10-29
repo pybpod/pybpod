@@ -29,7 +29,7 @@ This is Open Source software with a MIT license.
 Maintenance team
 ================
 
-The current and past members of the **pybpod-api** team.
+The current and past members of the **pybpod** team.
 
 * `@cajomferro <https://github.com/cajomferro/>`_ Carlos Mão de Ferro
 * `@JBauto <https://github.com/JBauto>`_ João Baúto
@@ -38,4 +38,4 @@ The current and past members of the **pybpod-api** team.
 
 Questions?
 ==========
-If you have any questions or want to report a problem with this library please fill a issue `here <https://bitbucket.org/fchampalimaud/pybpod-api/issues>`_.
+If you have any questions or want to report a problem with this library please fill a issue `here <https://github.com/pybpod/pybpod/issues>`_.
