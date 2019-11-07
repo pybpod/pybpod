@@ -46,7 +46,7 @@ Python is one of the most popular programming languages today `[1] <https://pypl
 
 Questions?
 ==========
-If you have any questions or want to report a problem with this library please fill in an issue `here <https://bitbucket.org/fchampalimaud/pybpod-api/issues>`_.
+If you have any questions or want to report a problem with this library please fill in an issue `here <https://github.com/pybpod/pybpod/issues>`_.
 
 Contents
 ========
@@ -81,7 +81,8 @@ Contents
    :caption: API reference
 
    PyBpod API <https://pybpod-api.readthedocs.io/>
-   
+   PyBpod GUI API <https://pybpod-gui-api.readthedocs.io/>
+
 .. toctree::
    :maxdepth: 4
    :includehidden:

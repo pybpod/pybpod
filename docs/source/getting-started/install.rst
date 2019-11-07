@@ -54,19 +54,19 @@ ___________________________
 2. Download the environment configuration file for your Operating System and create a virtual environment with it by
 executing the following commands in the "Anaconda Prompt".
 
-   Windows 10: `environment-windows-10.yml <https://bitbucket.org/fchampalimaud/pybpod/raw/248b05a43c2d6059187fa33b609e425e0ef76026/utils/environment-windows-10.yml>`_ (right click->Save Link as):
+   Windows 10: `environment-windows-10.yml <https://raw.githubusercontent.com/pybpod/pybpod/master/utils/environment-windows-10.yml>`_ (right click->Save Link as):
 
    .. code::
 
       conda env create -f utils/environment-windows-10.yml
 
-   Ubuntu 17.10 and up: `environment-ubuntu-17.10.yml <https://bitbucket.org/fchampalimaud/pybpod/raw/248b05a43c2d6059187fa33b609e425e0ef76026/utils/environment-ubuntu-17.10.yml>`_ (right click->Save Link as):
+   Ubuntu 17.10 and up: `environment-ubuntu-17.10.yml <https://raw.githubusercontent.com/pybpod/pybpod/master/utils/environment-ubuntu-17.10.yml>`_ (right click->Save Link as):
 
    .. code::
 
       conda env create -f utils/environment-ubuntu-17.10.yml
 
-   Mac OSx: `environment-macOSx.yml <https://bitbucket.org/fchampalimaud/pybpod/raw/248b05a43c2d6059187fa33b609e425e0ef76026/utils/environment-macOSx.yml>`_ (right click->Save Link as):
+   Mac OSx: `environment-macOSx.yml <https://raw.githubusercontent.com/pybpod/pybpod/master/utils/environment-macOSx.yml>`_ (right click->Save Link as):
 
    .. code::
 
@@ -82,7 +82,7 @@ executing the following commands in the "Anaconda Prompt".
 
 .. code::
 
-  git clone https://bitbucket.org/fchampalimaud/pybpod.git
+  git clone https://github.com/pybpod/pybpod.git
   git submodule update --init
   
 5. Access the created repository folder.

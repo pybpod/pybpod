@@ -11,5 +11,5 @@ dependencies:
     - sphinx-autobuild
     - sphinx-rtd-theme
     - pyqt5
-    - pyforms-gui
+    - pyforms-gui==4.901.2
     - pybpod
