@@ -1,6 +1,31 @@
 
 Changelog
 =========
+v1.8.0 (2019/11/09)
+-------------------
+- PyBpod's version number is now shared between the main packages of PyBpod
+  (pybpod, pybpod-api, pybpod-gui-api and pybpod-gui-plugin).
+- pybpod-api (v1.8.0)
+    - Fixed several documentation related issues
+    - Updated documentation
+    - Add support to kill a task or skip all trials to run_state_machine
+- pybpod-gui-api (v1.8.0)
+    - Documentation fixes
+    - Add support to kill tasks
+- pybpod-gui-plugin (v1.8.0)
+    - Add support to kill tasks (updated Subject and Setup panels)
+    - Fixed bug where bpods that weren't connected were removed from the list when refreshed
+    - Fixed Task selection on setup panel being active while running a protocol
+    - Fixed issue#51 (Behaviour ports were being reset in every load)
+- pybpod-gui-plugin-emulator (v0.1.4)
+    - Add task kill button to UI
+    - Reordered the “Test Protocol IO” button in the UI
+- pybpod-gui-plugin-rotaryencoder (v0.1.4)
+    - Added support for enabling/disabling moduleOutputStream in the GUI
+- pybpod-gui-plugin-soundcard (v0.1.6)
+    - Added libusb backend support
+    - Increased timeout duration on read
+
 v1.7.8 (2019/06/03)
 -------------------
 - Fixed a problem with the setup requirements
