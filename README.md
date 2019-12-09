@@ -1,6 +1,6 @@
 # PyBpod #
 
-**version:** 1.8.0
+**version:** 1.8.1
 
 PyBpod is a GUI application that enables interaction with the Bpod device from [Sanworks](https://sanworks.io/).
 
@@ -9,7 +9,9 @@ This project is maintained by a team of SW developers at the Champalimaud Founda
 ## Install PyBpod ##
 
 1. Download & install [Anaconda](https://www.anaconda.com/download/) or [Miniconda](https://conda.io/miniconda.html) to your user.
+
 2. After the installation, open "Anaconda Prompt"
+
 3. Create a virtual environment for running PyBpod with Python 3.6
 
     ```bash
