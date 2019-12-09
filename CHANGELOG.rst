@@ -1,6 +1,12 @@
 
 Changelog
 =========
+v1.8.1 (2019/12/09)
+-------------------
+- pybpod-api (v1.8.1)
+    - Fixed global_timer output actions for GlobalTimerTrig
+    - Fixed default send_events value on set_global_timer to 1 (as expected in the Bpod firmware)
+
 v1.8.0 (2019/11/09)
 -------------------
 - PyBpod's version number is now shared between the main packages of PyBpod
