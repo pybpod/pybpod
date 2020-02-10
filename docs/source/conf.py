@@ -25,10 +25,10 @@ import recommonmark.parser
 # -- Project information -----------------------------------------------------
 
 project = "PyBpod"
-copyright = "2019, Scientific Software Platform, Champalimaud Foundation"
+copyright = "2018-2020, Scientific Software Platform, Champalimaud Foundation"
 author = "Scientific Software Platform, Champalimaud Foundation"
 
-version = release = "1.8.1"
+version = release = "1.8.2"
 
 
 # -- General configuration ---------------------------------------------------
