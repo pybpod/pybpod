@@ -1,6 +1,14 @@
 
 Changelog
 =========
+v1.8.2 (2020/02/10)
+-------------------
+- pybpod-gui-plugin (v1.8.2)
+    - Changed 'Skip all trials' button to 'Stop'
+    - Changed 'Stop trial' button to 'Skip trial'
+- pybpod-gui-plugin-emulator (v0.1.5)
+    - Update button names
+
 v1.8.1 (2019/12/09)
 -------------------
 - pybpod-api (v1.8.1)
