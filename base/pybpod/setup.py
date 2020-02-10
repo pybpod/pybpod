@@ -3,7 +3,7 @@
 import os
 from setuptools import setup
 
-current_version = "1.8.1"
+current_version = "1.8.2"
 
 with open(os.path.join("README.md"), "r") as fd:
     long_description = fd.read()
